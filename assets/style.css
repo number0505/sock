@@ -5,6 +5,14 @@
 }
 
 
+canvas #canvasElement{
+	display:none;
+}
+
+
+
+
+
 
 body {
 	font-family: sans-serif;

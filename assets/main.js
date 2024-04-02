@@ -6,7 +6,7 @@ document.getElementById('startCamera').addEventListener('click', function() {
 			.then(function (stream) {
 					videoElement.srcObject = stream;
 			})
-			.catch(function (error) {
+			.catch(function (error) {a
 					console.log("Cannot access camera.",error);
 			});
 	}
