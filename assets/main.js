@@ -10,4 +10,4 @@ document.getElementById('startCamera').addEventListener('click', function() {
 					console.log("Cannot access camera.",error);
 			});
 	}
-}
+});
