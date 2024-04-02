@@ -11,12 +11,16 @@
 	</head>
 	<body>
 
-    <button id="startCamera">Load a camera</button>
+		<video id="video" width="640" height="480" autoplay></video>
+    <button id="capture">Capture Photo</button>
+    <canvas id="canvas" width="640" height="480" style="display:none;"></canvas>
+    <img id="photo" src="" alt="The screen capture will appear in this box.">
+    <!-- <button id="startCamera">Load a camera</button>
     <video id="videoElement" autoplay playsinline></video>
-		<script defer src="assets/main.js"></script>
 		<button id="takePhoto">Take a photo</button>
-		<canvas id="canvasElement" style="display:none;"></canvas>
-
-
+		<canvas id="canvasElement" style="display:none;"></canvas> -->
+		
+		
+		<script defer src="assets/main.js"></script>
 	</body>
 </html>
