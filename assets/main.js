@@ -25,14 +25,12 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	const photo = document.getElementById('photo');
 	const captureButton = document.getElementById('capture');
 
-	// Adjust these constraints to change the size or switch between the front/back camera on mobile devices
 	const constraints = {
 			video: {
 					width: 640, height: 480
 			}
 	};
 
-	// Access the user's webcam
 	navigator.mediaDevices.getUserMedia(constraints)
 	.then((stream) => {
 			video.srcObject = stream;
@@ -42,10 +40,8 @@ document.addEventListener('DOMContentLoaded', (event) => {
 	});
 
 	captureButton.addEventListener('click', () => {
-			// Draw the current frame from the video onto the canvas
 			canvas.getContext('2d').drawImage(video, 0, 0, canvas.width, canvas.height);
 		 
-			// Convert the canvas to an image and display it
 			photo.src = canvas.toDataURL('image/png');
 			photo.style.display = 'block';
 	});
