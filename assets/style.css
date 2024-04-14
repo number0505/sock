@@ -31,11 +31,11 @@ body, html {
 }
 #page1 {
 	z-index: 2; 
-	transform: scale(2); 
+	transform: scale(15); 
 }
 #page2 {
 	z-index: 1; 
-	transform: scale(0.5); 
+	transform: scale(2); 
 }
 
 /* .container {
