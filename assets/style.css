@@ -40,15 +40,20 @@ body, html {
 
 button {
 	position: fixed;
-	bottom: 20px;
+	padding: 16px 24px;
+	font-size: 20px;
+
+	bottom: 40px;
 	left: 50%;
 	transform: translateX(-50%);
-	padding: 10px 20px;
-	font-size: 16px;
-	color: white;
-	border: none;
-	border-radius: 5px;
+
+	color: white; /* 텍스트 컬러 */
+	background-color: transparent; /* 배경색 투명 */
+  border: 2px solid white;
+	border-radius: 22222px;
+	
 	cursor: pointer;
+	transition: all 0.3s;
 	z-index: 10;
 }
 
