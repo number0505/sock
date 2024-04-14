@@ -15,7 +15,7 @@ canvas #canvasElement{
 body, html {
 	margin: 0;
 	padding: 0;
-	height: 200vh; /* 두 페이지를 스크롤할 수 있도록 body의 높이 설정 */
+	height: 200vh; 
 	overflow-x: hidden;
 }
 .page {
@@ -30,11 +30,12 @@ body, html {
 	transition: transform 0.5s;
 }
 #page1 {
-	z-index: 2; /* 상위 페이지 */
+	z-index: 2; 
+	transform: scale(2); 
 }
 #page2 {
-	z-index: 1; /* 하위 페이지 */
-	transform: scale(0.5); /* 초기 상태는 축소 */
+	z-index: 1; 
+	transform: scale(0.5); 
 }
 
 /* .container {
