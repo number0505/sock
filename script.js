@@ -7,6 +7,12 @@ window.addEventListener('scroll', () => {
 	if(scrollPosition >= maxScroll) {
 		window.scrollTo(0, maxScroll);
 	}
+	
+	document.getElementById('nextPageButton').style.display = 'block'; // 버튼 표시
+	} else {
+		document.getElementById('nextPageButton').style.display = 'none'; // 스크롤 중 버튼 숨김
+	}
+
 
 	const percentage = scrollPosition / maxScroll;
 	// max(1... 은 축소했을 때 최대1 보다 작아지지 않도록 / 처음 200에서 100까지 축소
