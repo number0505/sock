@@ -5,20 +5,31 @@
 //https://www.npmjs.com/package/@google-cloud/vision
 
 
+// express 이라고, 웹사이트 호스팅하는 패키지
 var express = require('express');
+// fs 파일 읽는 페키지
 var fs = require('fs');
+// 바이너리에서 사진으로 변환해주는 패키지
 var util = require('util');
+// 바이너리에서 사진으로 변환해주는 패키지
 var mime = require('mime');
+// var mime = import('mime').then(mime => {}).catch(error => { console.error('Failed to load the mime module', error)});
+// 사진을 업로드할때, 도와주는 패키지
 var multer = require('multer');
 
-var upload = multer({dest: './uploaded'})
+// multer로 경로를 지정해주는거
+var upload = multer({dest: './uploaded'});
 
+// google sheet json 읽기
 var sockDB = require('./resources/Sock DB.json');
 
-//https://cloud.google.com/vision/docs/detecting-properties#vision_image_property_detection-nodejs
+// google cloud vision 패키지 들어오기
 const vision = require('@google-cloud/vision');
 
+// express를 app정의
 var app = express();
+//https://cloud.google.com/vision/docs/detecting-properties#vision_image_property_detection-nodejs
+
 
 
 // 홉페이지를 간단히 만든 html
@@ -35,6 +46,7 @@ var homePage =
     </html>
   `;
 
+
 // 홈페이지를 들어가면 어떤 html써야하는지  
 app.get('/', function(req, res) {
   res.writeHead(200, {
@@ -45,9 +57,9 @@ app.get('/', function(req, res) {
 
 
 // 웹사이트 호스팅하기
-app.listen(8085);
+app.listen(8081);
 
-console.log('Server Started on http://localhost:8080');
+console.log('Server Started on http://localhost:8081');
 
 app.post('/upload', upload.single('image'), async function(req, res, next) {
   const sockFound = await visionExample(req.file.path);
