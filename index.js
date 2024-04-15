@@ -43,8 +43,9 @@ app.get('/', function(req, res) {
   res.end(homePage);
 });
 
-// 웹사이트 호스킹하기
-app.listen(8080);
+
+// 웹사이트 호스팅하기
+app.listen(8085);
 
 console.log('Server Started on http://localhost:8080');
 
