@@ -25,7 +25,7 @@ window.addEventListener('scroll', () => {
 
 document.getElementById('nextPageButton').addEventListener('click', () => {
 	// 다음 페이지로 이동하는 로직 추가 (예: 새로운 URL로 리다이렉션)
-	window.location.href = 'http://localhost:8081'; // 여기서 URL을 원하는 대상 페이지로 변경하세요.
+	window.location.href = './upload.html'; // 여기서 URL을 원하는 대상 페이지로 변경하세요.
 });
 
 // 잼민이 버전
