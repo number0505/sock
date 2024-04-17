@@ -8,6 +8,7 @@
   "dependencies": {
     "@google-cloud/vision": "*",
     "express": "*",
-    "multer": "*"
+    "multer": "*",
+    "path": "*"
   }
 }
