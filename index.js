@@ -62,7 +62,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
     res.write(`<p>No sock found</p>`);
   }
 
-  // Delete file (optional)
+  // Delete file 
   fs.unlinkSync(req.file.path);
   
   res.end(`</body></html>`);
@@ -72,7 +72,7 @@ async function visionExample(path) {
   // Creates a client
   const client = new vision.ImageAnnotatorClient();
 
-  // 사진의 테그가 뭔지 구글에 물어보는거
+  // 사진의 태그가 뭔지 구글에 물어보는거
   const [tagResult] = await client.webDetection(path);
   console.log(`Tag1: ${tagResult.webDetection.webEntities?.at(0)?.description}`);
   console.log(`Tag2: ${tagResult.webDetection.webEntities?.at(1)?.description}`);
