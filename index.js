@@ -1,3 +1,5 @@
+'use strict';
+
 //https://cloud.google.com/vision/docs/detecting-properties
 
 //https://medium.com/google-cloud/using-the-google-cloud-vision-api-with-node-js-194e507afbd8
@@ -39,7 +41,6 @@ app.get('/', function(req, res) {
 app.get('/upload', function(req, res) {
 	res.sendFile('public/upload.html', {root: __dirname});
 });
-
 
 // 웹사이트 호스팅하기
 app.listen(8081);
