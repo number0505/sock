@@ -1,3 +1,4 @@
 node_modules
 auth/veraAuthKey.json
+auth
 .env
