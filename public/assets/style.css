@@ -67,6 +67,8 @@ button {
 
 .custom-file-input {
   display: inline-block;
+	padding: 16px 24px;
+	font-size: 20px;
 
 	color: rgb(81, 0, 255); /* 텍스트 컬러 */
 	background-color: transparent; /* 배경색 투명 */
