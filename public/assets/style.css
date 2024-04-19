@@ -65,6 +65,23 @@ button {
 	z-index: 10;
 }
 
+.custom-file-input {
+  display: inline-block;
+
+	color: rgb(81, 0, 255); /* 텍스트 컬러 */
+	background-color: transparent; /* 배경색 투명 */
+  border: 2px solid rgb(81, 0, 255);
+	border-radius: 22222px;
+	
+	cursor: pointer;
+	transition: all 0.3s;
+	z-index: 10;
+}
+
+.custom-file-input:hover {
+    background-color: #45a049;
+}
+
 .active {
 	position: fixed;
 	padding: 16px 24px;
