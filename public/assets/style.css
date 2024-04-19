@@ -36,6 +36,14 @@ body, html {
 #page2 {
 	z-index: 1; 
 	transform: scale(2); 
+	background-color: #E9DFCF;
+
+}
+h1{
+	padding: 20px 0 ;
+}
+P{
+ font-size: 20px;
 }
 
 button {
@@ -66,9 +74,9 @@ button {
 	left: 50%;
 	transform: translateX(-50%);
 
-	color: white; /* 텍스트 컬러 */
+	color: rgb(81, 0, 255); /* 텍스트 컬러 */
 	background-color: transparent; /* 배경색 투명 */
-  border: 2px solid white;
+  border: 2px solid rgb(81, 0, 255);
 	border-radius: 22222px;
 	
 	cursor: pointer;
