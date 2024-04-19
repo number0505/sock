@@ -65,16 +65,6 @@ button {
 	z-index: 10;
 }
 
-input[type='file'] {
-	/* 원하는 스타일 추가 */
-	border: 2px solid #ccc;
-	padding: 10px;
-	border-radius: 5px;
-	background-color: #f9f9f9;
-	color: #333;
-	font-size: 16px;
-	/* 기타 등등 */
-
 .active {
 	position: fixed;
 	padding: 16px 24px;
