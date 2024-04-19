@@ -7,17 +7,18 @@
 		<link href="assets/reset.css" rel="stylesheet">
 		<link href="assets/style.css" rel="stylesheet">
 		<script src="jquery.js"></script>
-	</head>
+	</head>	
 	<body>
 		
-		<a href='/' class='btn'> ← </a>
+		<a href='/' class='btn'> ㅑimg </a>
 		<h1>Upload your sock image</h1>
 		
 		<script src="script.js"></script>
 
 		<form method='post' action='/result' enctype='multipart/form-data'>
-			<input type='file'  name='image'/>
-			<input type='submit' class="active"/>
+			<input type='file' id='fileInput' name='image' style='display: none;'/>
+			<label for='fileInput' class='custom-file-input'>Choose File</label>
+			<input type='submit' class='active'/>
 		</form>
 	</body>
 </html>
