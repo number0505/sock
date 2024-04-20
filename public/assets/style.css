@@ -13,7 +13,7 @@ canvas #canvasElement{
 .sock-mask {
 	width: 100vw;
 	height: 100vh;
-	background: url('content/sock_bg.png'); /* 배경 이미지 */
+	background: white /* 배경 이미지 */
 	-webkit-mask-image: url('content/sock_image.svg'); /* 웹킷 기반 브라우저를 위한 마스크 */
 	mask-image: url('content/sock_image.svg'); /* 표준 마스크 */
 	mask-mode: alpha; /* 투명도를 사용하는 마스크 모드 */
