@@ -10,24 +10,17 @@ canvas #canvasElement{
 }
 
 
-.sock-image {
-	position: relative;
-	width: 300px; /* 이미지 너비 조정 */
-	height: auto; /* 이미지 높이 자동 조정 */
+.sock-mask {
+	width: 100vw;
+	height: 100vh;
+	background: url('content/sock_bg.png'); /* 배경 이미지 */
+	-webkit-mask-image: url('content/sock_image.svg'); /* 웹킷 기반 브라우저를 위한 마스크 */
+	mask-image: url('content/sock_image.svg'); /* 표준 마스크 */
+	mask-mode: alpha; /* 투명도를 사용하는 마스크 모드 */
+	mask-repeat: no-repeat;
+	mask-position: center;
+	mask-size: contain;
 }
-.sock-image::before {
-	content: '';
-	position: absolute;
-	top: 50%; /* 이미지의 중앙으로 조절 */
-	left: 50%; /* 이미지의 중앙으로 조절 */
-	transform: translate(-50%, -50%);
-	width: 200px; /* 구멍 크기에 따라 조절 */
-	height: 150px; /* 구멍 크기에 따라 조절 */
-	background-color: rgba(255, 255, 255, 0); /* 투명한 배경 색상 */
-	border-radius: 50%; /* 구멍 모양에 따라 조절 */
-	z-index: 1; /* 이미지 위로 올려 보이도록 */
-}
-
 
 
 body, html {
