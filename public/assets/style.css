@@ -11,15 +11,16 @@ canvas #canvasElement{
 
 
 .sock-mask {
-	width: 100vw;
-	height: 100vh;
-	background: white /* 배경 이미지 */
-	-webkit-mask-image: url('content/sock_image.svg'); /* 웹킷 기반 브라우저를 위한 마스크 */
-	mask-image: url('content/sock_image.svg'); /* 표준 마스크 */
-	mask-mode: alpha; /* 투명도를 사용하는 마스크 모드 */
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	-webkit-mask-image: url('content/sock_image.svg');
+	mask-image: url('content/sock_image.svg');
+	mask-mode: alpha;
 	mask-repeat: no-repeat;
 	mask-position: center;
-	mask-size: contain;
+	mask-size: cover;
 }
 
 
