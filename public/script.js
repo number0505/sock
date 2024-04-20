@@ -9,7 +9,8 @@ window.addEventListener('scroll', () => {
 	
 		if (document.getElementById('nextPageButton')) {
 			document.getElementById('nextPageButton').style.display = 'block'; // 버튼 표시
-
+			nextPageButton.classList.add('active');
+		}
 	} else {
 		if (document.getElementById('nextPageButton')) {
 			document.getElementById('nextPageButton').style.display = 'none'; // 스크롤 중 버튼 숨김
@@ -30,7 +31,7 @@ window.addEventListener('scroll', () => {
 	if (document.getElementById('page2')) {
 		document.getElementById('page2').style.transform = `scale(${scaleUp})`;
 	}
-};
+});
 
 
 document.getElementById('nextPageButton')?.addEventListener('click', () => {
