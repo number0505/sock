@@ -1,5 +1,13 @@
 
-
+body, html {
+	margin: 0;
+	padding: 0;
+	height: 100vh; /* 전체 높이를 화면에 맞춤 */
+	display: flex;
+	flex-direction: column; /* 수직 스택 */
+	overflow-x: hidden;
+	font-family: 'Inter', sans-serif;
+}
 
 /* Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font */
 
