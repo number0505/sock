@@ -18,13 +18,14 @@ canvas #canvasElement{
 .sock-image::before {
 	content: '';
 	position: absolute;
-	top: 20px; /* 양말 모양에 따라 조절 */
-	left: 50%; /* 양말 모양에 따라 조절 */
-	transform: translateX(-50%);
+	top: 50%; /* 이미지의 중앙으로 조절 */
+	left: 50%; /* 이미지의 중앙으로 조절 */
+	transform: translate(-50%, -50%);
 	width: 200px; /* 구멍 크기에 따라 조절 */
 	height: 150px; /* 구멍 크기에 따라 조절 */
-	background-color: white; /* 구멍 바깥 부분 색상 */
+	background-color: rgba(255, 255, 255, 0); /* 투명한 배경 색상 */
 	border-radius: 50%; /* 구멍 모양에 따라 조절 */
+	z-index: 1; /* 이미지 위로 올려 보이도록 */
 }
 
 
