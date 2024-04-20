@@ -16,6 +16,13 @@
 	--p-height: 150%;
 
 	--spacing: 1em;
+
+	/* COLOR */
+	--primary: #4142F4;
+	--secondary: #B47230;
+	--bg-color: #E9DFCF;
+	--black: #211F1B;
+
 }
 
 canvas #canvasElement{
@@ -142,6 +149,7 @@ h1 {
 	font-family: var(--h1-font);
 	text-transform: uppercase;
 	line-height: var(--h1-height);
+	color: var(--primary);
 }
 
 h2 { font-weight: bold; }
