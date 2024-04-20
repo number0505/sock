@@ -10,30 +10,31 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
 
-
-
-		<script src="jquery.js"></script>
 	</head>	
 	<body>
+		<div class="content-container">
+			<a href='/' class='btn'> Back </a>
+			<h1>
+				<div>Matching</div> 
+				<div>Lost Socks</div> 
+				<div>with Their</div> 
+				<div>Other Half</div> 
+			</h1>
+		</div>
 		
-		<a href='/' class='btn'> Back </a>
-		<h1>
-			<div>Matching</div> 
-			<div>Lost Socks</div> 
-			<div>with Their</div> 
-			<div>Other Half</div> 
-		</h1>
+		<div class="footer">
+			<p>Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match. Let the matching magic begin!</p>
+           
+			<form method='post' action='/result' enctype='multipart/form-data'>
+				<input type='file' id='fileInput' name='image' style='display: none;'/>
+      	<label for='fileInput' class='custom-file-input'>Choose a sock pic</label>
+      	<input type='submit' class='active_submit'/>
+      </form>
+		</div>
 
-		<p>
-			Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match. Let the matching magic begin!
-		</p>
+
 		
 		<script src="script.js"></script>
-
-		<form method='post' action='/result' enctype='multipart/form-data'>
-			<input type='file' id='fileInput' name='image' style='display: none;'/>
-			<label for='fileInput' class='custom-file-input'>Choose File</label>
-			<input type='submit' class='active_submit'/>
-		</form>
+		<script src="jquery.js"></script>
 	</body>
 </html>
