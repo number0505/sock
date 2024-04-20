@@ -10,6 +10,23 @@ canvas #canvasElement{
 }
 
 
+.sock-image {
+	position: relative;
+	width: 300px; /* 이미지 너비 조정 */
+	height: auto; /* 이미지 높이 자동 조정 */
+}
+.sock-image::before {
+	content: '';
+	position: absolute;
+	top: 20px; /* 양말 모양에 따라 조절 */
+	left: 50%; /* 양말 모양에 따라 조절 */
+	transform: translateX(-50%);
+	width: 200px; /* 구멍 크기에 따라 조절 */
+	height: 150px; /* 구멍 크기에 따라 조절 */
+	background-color: white; /* 구멍 바깥 부분 색상 */
+	border-radius: 50%; /* 구멍 모양에 따라 조절 */
+}
+
 
 
 body, html {
@@ -32,6 +49,7 @@ body, html {
 #page1 {
 	z-index: 2; 
 	transform: scale(15); 
+	
 }
 #page2 {
 	z-index: 1; 
