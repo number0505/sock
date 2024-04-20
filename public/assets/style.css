@@ -4,11 +4,9 @@
 	--spacing: 1em;
 }
 
-
 canvas #canvasElement{
 	display:none;
 }
-
 
 .sock-mask {
 	width: 100%;
@@ -21,7 +19,6 @@ canvas #canvasElement{
 	mask-position: center;
 	mask-size: contain;
 }
-
 
 body, html {
 	margin: 0;
@@ -100,6 +97,7 @@ button:hover {
 	transition: all 0.3s;
 	z-index: 10;
 }
+
 .active_submit {
 	position: fixed;
 	padding: 16px 24px;
@@ -118,36 +116,6 @@ button:hover {
 	transition: all 0.3s;
 	z-index: 10;
 }
-
-/* .container {
-  position: relative;
-  height: 100vh;
-  overflow: hidden;
-}
-
-.page {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-  height: 100%;
-  text-align: center;
-}
-
-.title {
-  z-index: 1;
-}
-.sock_bg {
-  z-index: 0;
-	size: 300%
-} */
-
-
-
-
-
-
 
 body {
 	font-family: sans-serif;
@@ -177,3 +145,8 @@ li {
 }
 
 .faded { opacity: 0.333 }
+
+
+/* Font Font Font Font Font Font Font Font Font Font Font Font */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
