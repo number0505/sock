@@ -1,17 +1,24 @@
+html{
+	height: 100vh; /* 전체 높이를 화면에 맞춤 */
 
+}
 body {
-	margin: 16px; /* var(--font-size); */
-	padding: 0;
+	padding: 16px; /* var(--font-size); */
 	height: 100vh; /* 전체 높이를 화면에 맞춤 */
 	display: flex;
 	flex-direction: column; /* 수직 스택 */
-	overflow-x: hidden;
-	font-family: 'Inter', sans-serif;
+	/* overflow-x: hidden; */
+	overflow-y: hidden; /* 스크롤 안되게 하는 */
+
+	background:#E9DFCF;/* var(--bg-color); */
 }
 
 .content-container {
 	display: flex;
+	flex: 1;
 	flex-direction: column;
+	flex-grow: 1;
+
 	height: 100vh;
 }
 
@@ -22,6 +29,8 @@ body {
 .footer {
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
 	margin-top: auto; /* 나머지 공간을 모두 차지하도록 설정 */
+	flex-direction: column; /* 내부 요소를 세로로 정렬 */
+  justify-content: space-between; /* 내부 요소 사이에 공간을 균등하게 배분 */
 }
 
 
