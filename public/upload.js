@@ -8,15 +8,15 @@ document.getElementById('fileInput').addEventListener('change', function() {
 
 	const reader = new FileReader();
 	reader.onload = function(e) {
-			// 프리뷰 보이고말고
-			preview.src = e.target.result;
-			preview.style.display = 'block';
+		// 프리뷰 보이고말고
+		preview.src = e.target.result;
+		preview.style.display = 'block';
 
-			// 요소들 보이고말고 
-			document.querySelector('.description').style.display = 'none';
-			document.querySelector('.confirmation').style.display = 'block';
-			document.querySelector('.custom-file-input').style.display = 'none';
-			document.querySelector('.active_submit').style.display = 'inline-block';
+		// 요소들 보이고말고 
+		document.querySelector('.description').style.display = 'none';
+		document.querySelector('.confirmation').style.display = 'block';
+		document.querySelector('.custom-file-input').style.display = 'none';
+		document.querySelector('.active_submit').style.display = 'inline-block';
 	};
 	reader.readAsDataURL(file);
 });
