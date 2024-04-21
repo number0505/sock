@@ -49,9 +49,11 @@ console.log('Server Started on http://localhost:8081');
 
 app.post('/result', upload.single('image'), async function(req, res, next) {
   const sockFound = await visionExample(req.file.path);
+  const imageUrl = `/uploaded/${req.file.filename}`; // 이미지 URL을 정의
+
 
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write(`<!DOCTYPE HTML><html><head><link rel="stylesheet" type="text/css" href="/assets/result.css"></head><body>`);
+  res.write(`<!DOCTYPE HTML><html><head><link rel="stylesheet" type="text/css" href="/assets/result.css"><link rel="stylesheet" type="text/css" href="/assets/style.css"></head><body>`);
 
   res.write(`<a href='/upload' class='btn'>Back</a>`);
   res.write(`<img src="${imageUrl}" width="200">`);
@@ -65,7 +67,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
   }
 
   // Delete file 
-  fs.unlinkSync(req.file.path);
+  // fs.unlinkSync(req.file.path);
   
   res.end(`</body></html>`);
 });
