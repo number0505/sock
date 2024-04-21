@@ -11,6 +11,7 @@
 var express = require('express');
 // ㅍㅏㅇㅣㄹ ㄷㅣㄹㅔㄱㅌㅗㄹㅣ 
 var path = require('path');
+
 // fs 파일 읽는 페키지
 var fs = require('fs');
 // 바이너리에서 사진으로 변환해주는 패키지
@@ -32,6 +33,8 @@ var app = express();
 //https://cloud.google.com/vision/docs/detecting-properties#vision_image_property_detection-nodejs
 
 app.use(express.static(path.join(__dirname, 'public')))
+app.use('/uploaded', express.static(path.join(__dirname, 'uploaded')));
+
 
 // 홈페이지를 들어가면 어떤 html써야하는지  
 app.get('/', function(req, res) {
