@@ -55,16 +55,26 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
 
   res.write(`<a href='/upload' class='btn'>Back</a>`);
   
+  // Assuming the image is stored and accessible via the '/uploaded' route
+  const imageUrl = `/uploaded/${req.file.filename}`;
+  res.write(`<img src="${imageUrl}" width="200">`);
+  
   if (sockFound) {
-    // Base64 the image so we can display it on the page
-		res.write(`<img width=200 src="resources/${sockFound.file}"></img>`);
-    res.write(JSON.stringify(sockFound.description, null, 4));
+      res.write(`<p>${JSON.stringify(sockFound.description, null, 4)}</p>`);
   } else {
-    res.write(`<p>No sock found</p>`);
+      res.write(`<p>No sock found</p>`);
   }
+   
+  // if (sockFound) {
+  //   // Base64 the image so we can display it on the page
+	// 	res.write(`<img width=200 src="resources/${sockFound.file}"></img>`);
+  //   res.write(JSON.stringify(sockFound.description, null, 4));
+  // } else {
+  //   res.write(`<p>No sock found</p>`);
+  // }
 
-  // Delete file 
-  fs.unlinkSync(req.file.path);
+  // // Delete file 
+  // fs.unlinkSync(req.file.path);
   
   res.end(`</body></html>`);
 });
