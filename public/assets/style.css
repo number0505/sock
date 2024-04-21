@@ -28,6 +28,9 @@
 
 }
 
+
+/* LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE LANDING PAGE */
+
 canvas #canvasElement{
 	display:none;
 }
@@ -43,7 +46,6 @@ canvas #canvasElement{
 	mask-position: center;
 	mask-size: contain;
 }
-
 
 .page {
 	position: fixed;
@@ -72,6 +74,7 @@ canvas #canvasElement{
 .btn {
 	text-transform: uppercase;
 	font-size: var(--btn-size);
+	font-family: var(--p-font);
 
 }
 
@@ -121,11 +124,6 @@ button:hover {
 	z-index: 10;
 }
 
-body {
-	font-family: sans-serif;
-	padding: var(--spacing);
-	padding-bottom: 33vh;
-}
 
 aside { margin-bottom: calc(4 * var(--spacing)); }
 
@@ -175,3 +173,13 @@ li {
 /* Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
+
+
+
+
+/* TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM TRASH CAM */
+/* body {
+	font-family: sans-serif;
+	padding: var(--spacing);
+	padding-bottom: 33vh;
+} */
