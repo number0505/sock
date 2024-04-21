@@ -41,3 +41,5 @@ document.getElementById('nextPageButton')?.addEventListener('click', () => {
 document.querySelector('.custom-file-input').addEventListener('click', function() {
     document.getElementById('fileInput').click();
 });
+
+
