@@ -85,6 +85,14 @@ body {
 
 }
 
+.description{
+
+}
+
+.confirmation{
+	display:none;
+}
+
 /* Choose a pic 버튼 */
 .custom-file-input {
   display: inline-block;
