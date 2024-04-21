@@ -54,8 +54,14 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
   const sockFound = await visionExample(req.file.path);
 
   res.writeHead(200, {'Content-Type': 'text/html'});
+  res.write(`<!DOCTYPE HTML><html><head>`);
+  res.write(`<link rel="stylesheet" type="text/css" href="/result.css">
+  `);
+  res.write(`</head>`);
+
   res.write(`<!DOCTYPE HTML><html><body>`);
 
+  // 여기서 버튼 바꾸면 됨
   res.write(`<a href='/upload' class='btn'>Back</a>`);
   
   // Assuming the image is stored and accessible via the '/uploaded' route
