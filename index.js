@@ -11,7 +11,6 @@
 var express = require('express');
 // ㅍㅏㅇㅣㄹ ㄷㅣㄹㅔㄱㅌㅗㄹㅣ 
 var path = require('path');
-
 // fs 파일 읽는 페키지
 var fs = require('fs');
 // 바이너리에서 사진으로 변환해주는 패키지
@@ -33,8 +32,6 @@ var app = express();
 //https://cloud.google.com/vision/docs/detecting-properties#vision_image_property_detection-nodejs
 
 app.use(express.static(path.join(__dirname, 'public')))
-app.use('/uploaded', express.static(path.join(__dirname, 'uploaded')));
-
 
 // 홈페이지를 들어가면 어떤 html써야하는지  
 app.get('/', function(req, res) {
@@ -54,36 +51,21 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
   const sockFound = await visionExample(req.file.path);
 
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write(`<!DOCTYPE HTML><html><head>`);
-  res.write(`<link rel="stylesheet" type="text/css" href="/result.css">
-  `);
-  res.end(`</head>`);
+  res.write(`<!DOCTYPE HTML><html><head><link rel="stylesheet" type="text/css" href="/assets/result.css"></head><body>`);
 
-  res.write(`<body>`);
-
-  // 여기서 버튼 바꾸면 됨
   res.write(`<a href='/upload' class='btn'>Back</a>`);
-  
-  // Assuming the image is stored and accessible via the '/uploaded' route
-  const imageUrl = `/uploaded/${req.file.filename}`;
   res.write(`<img src="${imageUrl}" width="200">`);
   
   if (sockFound) {
-      res.write(`<p>${JSON.stringify(sockFound.description, null, 4)}</p>`);
+    // Base64 the image so we can display it on the page
+		res.write(`<img width=200 src="resources/${sockFound.file}"></img>`);
+    res.write(JSON.stringify(sockFound.description, null, 4));
   } else {
-      res.write(`<p>No sock found</p>`);
+    res.write(`<p>No sock found</p>`);
   }
-   
-  // if (sockFound) {
-  //   // Base64 the image so we can display it on the page
-	// 	res.write(`<img width=200 src="resources/${sockFound.file}"></img>`);
-  //   res.write(JSON.stringify(sockFound.description, null, 4));
-  // } else {
-  //   res.write(`<p>No sock found</p>`);
-  // }
 
-  // // Delete file 
-  // fs.unlinkSync(req.file.path);
+  // Delete file 
+  fs.unlinkSync(req.file.path);
   
   res.end(`</body></html>`);
 });
