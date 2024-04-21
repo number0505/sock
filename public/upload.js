@@ -1,24 +1,32 @@
-
-function previewFile() {
+document.getElementById('fileInput').addEventListener('change', function() {
 	const preview = document.getElementById('preview');
 	const file = document.getElementById('fileInput').files[0];
+	if (!file) {
+			resetForm(); // 파일 선택 안됏으면 리셋
+			return; // Exit the function 
+	}
+
 	const reader = new FileReader();
+	reader.onload = function(e) {
+			// 프리뷰 보이고말고
+			preview.src = e.target.result;
+			preview.style.display = 'block';
 
-reader.onloadend = function() {
-	if (file) {
-		preview.src = reader.result; // 읽은 파일의 내용을 src로 설정
-		preview.style.display = 'block'; // 이미지 표시
-	} else {
-		preview.style.display = 'none'; // 파일이 없으면 미리보기 숨김
-	}
-};
+			// 요소들 보이고말고 
+			document.querySelector('.description').style.display = 'none';
+			document.querySelector('.confirmation').style.display = 'block';
+			document.querySelector('.custom-file-input').style.display = 'none';
+			document.querySelector('.active_submit').style.display = 'inline-block';
+	};
+	reader.readAsDataURL(file);
+});
 
-	if (file) {
-			reader.readAsDataURL(file);
-	} else {
-			preview.src = "";
-			preview.style.display = 'none';
-	}
-};
-
-document.getElementById('fileInput').addEventListener('change', previewFile); // fileInput에 이벤트 리스너 추가
+function resetForm() {
+	const preview = document.getElementById('preview');
+	preview.src = "";
+	preview.style.display = 'none';
+	document.querySelector('.description').style.display = 'block';
+	document.querySelector('.confirmation').style.display = 'none';
+	document.querySelector('.custom-file-input').style.display = 'inline-block';
+	document.querySelector('.active_submit').style.display = 'none';
+}

@@ -91,6 +91,8 @@ body {
 
 .confirmation{
 	display:none;
+	padding-top: 40px;
+	padding-bottom: 8px;
 }
 
 /* Choose a pic 버튼 */
@@ -100,7 +102,7 @@ body {
 	bottom: 40px;
 
 	padding: 16px 24px;
-	width: calc(100% - var(--font-size)*2);
+	width: auto;
 	
 	left: 50%; 
 	transform: translateX(-50%); 
@@ -122,11 +124,12 @@ body {
 /* image preview */
 #preview {
 	display: none; /* 초기에 숨겨진 상태 */
-	width: auto; /* 너비 자동 조절 */
-	height: 200px; /* 높이 설정 */
-	margin: 20px auto; /* 상단 마진과 자동 좌우 마진 */
-	border: 1px solid #ccc; /* 경계선 추가 */
-	box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* 그림자 효과 */
+	/* width: auto; 너비 자동 조절 */
+	height: 100px; /* 높이 설정 */
+	/* margin: auto; 상단 마진과 자동 좌우 마진 */
+	border: 1px solid var(--primary); 
+	margin-bottom: 120px;
+	/* box-shadow: 0 2px 4px var(--primary); */
 }
 
 /* Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font */
