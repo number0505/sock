@@ -8,7 +8,6 @@ body {
 	display: flex;
 	flex-direction: column; /* 수직 스택 */
 	/* overflow-x: hidden; */
-	overflow-y: hidden; /* 스크롤 안되게 하는 */
 
 	background:#E9DFCF;/* var(--bg-color); */
 }
