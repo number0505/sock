@@ -5,6 +5,7 @@
 	--font-size: 16px;
 	--h1-size: calc(var(--font-size) * 6.5); 
 	--h2-size: calc(var(--font-size) * 1.3); 
+	--btn-size: 20px;
 
 	/* FONT STYLE */
   --h1-font: "Oswald", sans-serif;
@@ -67,20 +68,21 @@ canvas #canvasElement{
 
 }
 
-button {
+/* 버튼 모두에 적용 */
+.btn {
+	text-transform: uppercase;
+	font-size: var(--btn-size);
 
 }
 
+/* Choose a pic 버튼 */
 .custom-file-input {
   display: inline-block;
+	position: fixed;
 	padding: 16px 24px;
-	font-size: 20px;
 
 	left: 50%; 
 	transform: translateX(-50%); /* 정확히 중앙에 오도록 조정 */
-
-	position: fixed; /* 위치 고정 */
-	bottom: 20px; /* 하단에서 20px 위에 위치 */
 
 	color: rgb(81, 0, 255); /* 텍스트 컬러 */
 	background-color: transparent; /* 배경색 투명 */
@@ -92,11 +94,13 @@ button {
 	z-index: 1000;
 }
 
+/*  ??? - upload페이지에는 안먹힘  */
 button:hover {
   background-color: rgb(81, 0, 255);
 	color: white;
 }
 
+/* 이것도 버튼 */
 .active {
 	position: fixed;
 	padding: 16px 24px;

@@ -19,6 +19,9 @@ body {
 	flex-grow: 1;
 
 	height: 100vh;
+
+	position: static; /* 위치 고정 */
+	bottom: 20px; /* 하단에서 20px 위에 위치 */
 }
 
 .header {
