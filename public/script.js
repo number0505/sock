@@ -36,7 +36,7 @@ window.addEventListener('scroll', () => {
 
 document.getElementById('nextPageButton')?.addEventListener('click', () => {
 	// 다음 페이지로 이동하는 로직 추가 (예: 새로운 URL로 리다이렉션)
-	window.location.href = '/upload'; // 여기서 URL을 원하는 대상 페이지로 변경하세요.
+	window.location.href = '/upload'; //원하는 페이지로 변경
 });
 document.querySelector('.custom-file-input').addEventListener('click', function() {
     document.getElementById('fileInput').click();
