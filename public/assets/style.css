@@ -96,7 +96,19 @@ canvas #canvasElement{
 }
 #page1_desktop {
 	z-index: 2; 
-	transform: scale(15); 	
+	transform: scale(15); 
+	flex-direction: column;	
+}
+
+#upper-bar {
+	background-color: var(--secondary);
+	width: 100%;
+}
+
+#lower-bar {
+	background-color: var(--secondary);
+	width: 100%;
+
 }
 #page2_desktop {
 	z-index: 1; 
