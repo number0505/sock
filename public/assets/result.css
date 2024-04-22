@@ -35,7 +35,8 @@ p{
 }
 
 body{
-	padding: 16px 16px 180px 16px; /* var(--font-size); */
+	padding: 16px 16px; /* var(--font-size); */
+	margin: 0 !important;
 	height: 100vh; /* 전체 높이를 화면에 맞춤 */
 	width: 100vw;
 

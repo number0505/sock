@@ -19,7 +19,7 @@ var util = require('util');
 var multer = require('multer');
 
 // multer로 경로를 지정해주는거
-var upload = multer({dest: './uploaded'});
+var upload = multer({dest: './public/uploaded'});
 
 // google sheet json 읽기
 var sockDB = require('./public/resources/Sock DB.json');
@@ -49,19 +49,26 @@ console.log('Server Started on http://localhost:8081');
 
 app.post('/result', upload.single('image'), async function(req, res, next) {
   const sockFound = await visionExample(req.file.path);
-  const imageUrl = `/uploaded/${req.file.filename}`; // 이미지 URL을 정의
+  const imageUrl = `uploaded/${req.file.filename}`; // 이미지 URL을 정의
 
 
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write(`<!DOCTYPE HTML><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="/assets/result.css"><link rel="stylesheet" type="text/css" href="/assets/style.css"></head><body>`);
+  res.write(`<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="/assets/result.css"><link rel="stylesheet" type="text/css" href="/assets/style.css"></head><body>`);
 
   res.write(`<a href='/upload' class='btn'>Back</a>`);
-  res.write(`<img src="${imageUrl}" width="200">`);
+  res.write(`<img src="${imageUrl}" width="200"></img>`);
   
   if (sockFound) {
-    // Base64 the image so we can display it on the page
-		res.write(`<img width=200 src="resources/${sockFound.file}"></img>`);
-    res.write(JSON.stringify(sockFound.description, null, 4));
+    const rgb = `rgb(${sockFound.r} ${sockFound.g} ${sockFound.b})`;
+    res.write(`
+      <svg width="230" height="378" viewBox="0 0 230 378" xmlns="http://www.w3.org/2000/svg">
+        <path d="M145.989 0L112.077 188.911L99.7662 212.831L10.1481 308.157L0 338.786L12.7401 371.615L42.1648 377.782L73.1848 366.521L163.606 296.431L188.39 280.877L202.191 261.826L205.437 228.937L197.976 196.431L230 14.8134L145.989 0Z" fill="${rgb}" stroke="black" />
+      </svg>
+      <p>${sockFound.description}</p>
+      <p>Tag1: ${sockFound.tag1} Tag2: ${sockFound.tag2} Tag3: ${sockFound.tag3}</p>
+      <p>color: ${sockFound.r} ${sockFound.g} ${sockFound.b}</p>
+      <img width=200 src="resources/${sockFound.file}"></img>
+    `)
   } else {
     res.write(`<p>No sock found</p>`);
   }

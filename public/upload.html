@@ -32,11 +32,14 @@
 			<p class="confirmation">Image uploaded successfully!</p>
 
            
-			<form method='post' action='/result' enctype='multipart/form-data'>
-				<input type='file' id='fileInput' name='image' style='display: none;' onchange="handleFileSelect();"/>
-				<img id="preview" src="" alt="image preview" style="max-width: 100%; height: auto; display: none;"> 
+			<form method='post' id="myForm" action='/result' enctype='multipart/form-data'>
+				<input type='file' id='fileInput' name='image' style='display: none;' onchange="handleFileSelect();" />
+				<img id="preview" src="" alt="image preview" style="max-width: 100%; height: auto; display: none;" />
       	<label for='fileInput' class='custom-file-input btn'>Choose a pic</label>
-      	<input type='submit' class='active_submit btn' style='display:none;'/>
+      	<input type='submit' id='submitBtn' class='active_submit btn' style='display:none;'/>
+				<div id="loadingSpinner" style="display:none;">
+					<div class="spinner"></div>
+				</div>
       </form>
 			<!-- 이미지 사이즈 나중에 수정 필요 -->
 		</div>

@@ -125,7 +125,7 @@ button:hover {
 }
 
 
-aside { margin-bottom: calc(4 * var(--spacing)); }
+/* aside { margin-bottom: calc(4 * var(--spacing)); } */
 
 
 
@@ -159,7 +159,7 @@ em { font-style: italic }
 ul {
 	display: grid;
 	gap: calc(4 * var(--spacing));
-	margin-top: calc(4 * var(--spacing));
+	/* margin-top: calc(4 * var(--spacing)); */
 }
 
 li {
