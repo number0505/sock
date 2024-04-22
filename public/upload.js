@@ -44,8 +44,10 @@ function resetForm() {
 	const preview = document.getElementById('preview');
 	preview.src = "";
 	preview.style.display = 'none';
-	document.querySelector('.description').style.display = 'block';
-	document.querySelector('.confirmation').style.display = 'none';
-	document.querySelector('.custom-file-input').style.display = 'inline-block';
-	document.querySelector('.active_submit').style.display = 'none';
+	// document.querySelector('.description').style.display = 'block';
+	// document.querySelector('.confirmation').style.display = 'none';
+	// document.querySelector('.custom-file-input').style.display = 'inline-block';
+	// document.querySelector('.active_submit').style.display = 'none';
+	document.getElementById('fileLabel').style.display = 'inline-block'
+	document.getElementById('submitBtn').style.display = 'none';
 }
