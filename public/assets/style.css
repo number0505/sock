@@ -103,11 +103,13 @@ canvas #canvasElement{
 #upper-bar {
 	background-color: var(--secondary);
 	width: 100%;
+	flex-grow: 1;
 }
 
 #lower-bar {
 	background-color: var(--secondary);
 	width: 100%;
+	flex-grow: 1;
 
 }
 #page2_desktop {
@@ -125,7 +127,8 @@ canvas #canvasElement{
 
 	border-radius: 22222px;
 	padding: 16px 24px;
-	width: auto;
+	width: fit-content;
+
 	
 	/* 정확히 중앙에 오도록 조정 */
 	left: 50%; 
@@ -219,6 +222,48 @@ p{
 .faded { opacity: 0.333 }
 
 
+@media (min-width: 768px) {
+	#desktop {
+		display: block;
+	}
+	#mobile{
+		display: none;
+	}
+
+	#right-text_desktop{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.btn {
+		text-transform: uppercase;
+		font-size: var(--btn-size);
+		font-family: var(--p-font);
+		white-space: nowrap;
+		border-radius: 22222px;
+		padding: 16px 24px;
+		width: fit-content;
+
+		cursor: pointer;
+		transition: all 0.3s;
+		z-index: 1000;
+	}
+	.active {
+    padding: 16px 24px;
+    font-size: 20px;
+    color: white;
+    background-color: transparent;
+    border: 2px solid white;
+    border-radius: 22222px;
+	}
+
+	element.style {
+		display: block;
+	}
+
+	
+}
 /* Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font */
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap');
