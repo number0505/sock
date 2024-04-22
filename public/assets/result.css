@@ -53,12 +53,33 @@ img{
 }
 
 .rgb{
-	border: var(--primary) 1px solid;
+	border: var(--primary) 2px solid;
+	border-radius: 22222px;
+/* 외않되?
+	width: 48px;
+	height: 48px; */
+
+	font-family: var(--p-font);
+	font-size: 20px;
+
+	padding: 12px 16px;
+	margin-right: 4px;
+}
+
+.tag{
+	padding: 12px 16px;
+	border: var(--primary) 2px solid;
 	border-radius: 22222px;
 
-	width: 48px;
-	height: 48px;
-	font-family: var(--font-size);
-	font-size: 20px
+	font-family: var(--p-font);
+	font-size: 20px;
 
+	padding: 12px 16px;
+	margin-right: 4px;
+}
+
+span{
+	font-family: var(--font-size);
+	font-size: 20px;
+	margin-right: 8px;
 }

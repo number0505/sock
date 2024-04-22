@@ -67,15 +67,16 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
       </svg>
       <p>
         <span class="rgb">R</span>
-        <p>${sockFound.r}>
+        <span>${sockFound.r}</span>
         <span class="rgb">G</span>
-        <p>${sockFound.g}>
+        <span>${sockFound.g}</span>
         <span class="rgb">B</span>
-        <p>${sockFound.b}>
+        <span>${sockFound.b}</span>
       </p>
-      <p>color: ${sockFound.r} ${sockFound.g} ${sockFound.b}</p>
-
-      <p>Tag1: ${sockFound.tag1} Tag2: ${sockFound.tag2} Tag3: ${sockFound.tag3}</p>
+        <span class="tag"> ${sockFound.tag1}</span>
+        <span class="tag"> ${sockFound.tag2}</span> 
+        <span class="tag"> ${sockFound.tag3}</span>
+      </p>
       <img width=200 src="resources/${sockFound.file}"></img>
       <p>${sockFound.description}</p>
 
