@@ -81,7 +81,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
           <span class="tag"> ${sockFound.tag3}</span>
         </p>
       </main>
-        <h1>The traits of your sock</h1>
+        <h1>The perfect match for your sock</h1>
         <img width=200 src="resources/${sockFound.file}"></img>
         <p class="description">${sockFound.description}</p>
       </main>
