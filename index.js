@@ -53,7 +53,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
 
 
   res.writeHead(200, {'Content-Type': 'text/html'});
-  res.write(`<!DOCTYPE HTML><html><head><link rel="stylesheet" type="text/css" href="/assets/result.css"><link rel="stylesheet" type="text/css" href="/assets/style.css"></head><body>`);
+  res.write(`<!DOCTYPE HTML><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="/assets/result.css"><link rel="stylesheet" type="text/css" href="/assets/style.css"></head><body>`);
 
   res.write(`<a href='/upload' class='btn'>Back</a>`);
   res.write(`<img src="${imageUrl}" width="200">`);
