@@ -142,14 +142,14 @@ h1 {
 h2 { font-weight: bold; }
 
 p{
-	font-size: 16px;
+	font-size: var(--font-size);
 	font-family: var(--p-font);
 	line-height: var(--p-height);
 	letter-spacing: var(--p-spacing);
 
 	color: var(--primary);
 
-	padding: 0 0 40px 0 ;
+	/* padding: 0 0 40px 0 ; */
 }
 
 a { color: blue; }
