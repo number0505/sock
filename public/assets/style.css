@@ -61,16 +61,26 @@ canvas #canvasElement{
 	justify-content: center;
 	transition: transform 0.5s;
 }
-#page1 {
+#page1_mobile {
 	z-index: 2; 
 	transform: scale(15); 
 	
 }
-#page2 {
+#page2_mobile {
 	z-index: 1; 
 	transform: scale(2); 
 	background-color: #E9DFCF;
 
+}
+#page1_desktop {
+	z-index: 2; 
+	transform: scale(15); 
+	
+}
+#page2_desktop {
+	z-index: 1; 
+	transform: scale(2); 
+	background-color: #E9DFCF;
 }
 
 /* 버튼 모두에 적용 */
