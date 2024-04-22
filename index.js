@@ -65,13 +65,14 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
       <svg width="186" height="302" viewBox="0 0 208 320" xmlns="http://www.w3.org/2000/svg">
       <path d="M117.857 0.0620117L90.6561 151.03L80.781 170.146L8.89683 246.326L0.756836 270.803L10.9759 297.038L34.578 301.967L59.4596 292.968L131.988 236.955L151.867 224.525L162.937 209.3L165.541 183.017L159.557 157.04L185.244 11.9001L117.857 0.0620117Z" fill="${rgb}" stroke="#4142F4" stroke-width="5"/>
       </svg>
-      <span class="rgb">R</span>
-      <p>${sockFound.r}>
-      <span class="rgb">G</span>
-      <p>${sockFound.g}>
-      <span class="rgb">B</span>
-      <p>${sockFound.b}>
-
+      <p>
+        <span class="rgb">R</span>
+        <p>${sockFound.r}>
+        <span class="rgb">G</span>
+        <p>${sockFound.g}>
+        <span class="rgb">B</span>
+        <p>${sockFound.b}>
+      </p>
       <p>color: ${sockFound.r} ${sockFound.g} ${sockFound.b}</p>
 
       <p>Tag1: ${sockFound.tag1} Tag2: ${sockFound.tag2} Tag3: ${sockFound.tag3}</p>

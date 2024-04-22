@@ -55,4 +55,10 @@ img{
 .rgb{
 	border: var(--primary) 1px solid;
 	border-radius: 22222px;
+
+	width: 48px;
+	height: 48px;
+	font-family: var(--font-size);
+	font-size: 20px
+
 }
