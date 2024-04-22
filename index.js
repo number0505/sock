@@ -55,12 +55,13 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
   res.writeHead(200, {'Content-Type': 'text/html'});
   res.write(`<!DOCTYPE html><html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><link rel="stylesheet" type="text/css" href="/assets/result.css"><link rel="stylesheet" type="text/css" href="/assets/style.css"></head><body>`);
 
-  // res.write(`<a href='/upload' class='btn'>Back</a>`);
-  res.write(`<img src="${imageUrl}" width="200"></img>`);
+  res.write(`<a href='/upload' class='btn'>Back</a>`);
+  // res.write(`<img src="${imageUrl}" width="200"></img>`);
   
   if (sockFound) {
     const rgb = `rgb(${sockFound.r} ${sockFound.g} ${sockFound.b})`;
     res.write(`
+      <h1>The traits of your sock</h1>
       <svg width="230" height="378" viewBox="0 0 230 378" xmlns="http://www.w3.org/2000/svg">
         <path d="M145.989 0L112.077 188.911L99.7662 212.831L10.1481 308.157L0 338.786L12.7401 371.615L42.1648 377.782L73.1848 366.521L163.606 296.431L188.39 280.877L202.191 261.826L205.437 228.937L197.976 196.431L230 14.8134L145.989 0Z" fill="${rgb}" stroke="#4142F4" stroke-width="3"/>
       </svg>
