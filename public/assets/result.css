@@ -48,6 +48,8 @@ body{
 
 a{
 	margin: 0 !important;
+	top: var(--font-size); 
+	left: var(--font-size);
 }
 main{
 	width: var(--100vw-padding);
@@ -55,6 +57,7 @@ main{
 
 h1{
 	margin: 24px 0 !important;
+	
 }
 
 img{

@@ -153,7 +153,9 @@ h1 {
 	color: var(--primary);
 }
 
-h2 { font-weight: bold; }
+h2 { 
+	font-weight: bold; 
+}
 
 p{
 	font-size: var(--font-size);
