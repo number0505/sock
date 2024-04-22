@@ -57,6 +57,9 @@ body {
 
 }
 
+p{
+	padding: 0 0 40px 0 ;
+}
 
 .content-container {
 	/* display: flex;
