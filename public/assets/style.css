@@ -12,6 +12,9 @@
 	--h2-font: "Oswald", sans-serif;
   --p-font: "Inter", sans-serif;
 
+	/* FONT WEIGHT */
+	--h1-weight: 500;
+
 	/* LINE HEIGHT */
 	--h1-height: 100%;
 	--p-height: 150%;
@@ -148,6 +151,8 @@ button:hover {
 h1 { 
 	font-size: var(--h1-size); 
 	font-family: var(--h1-font);
+
+	font-weight: var(--h1-weight);
 	text-transform: uppercase;
 	line-height: var(--h1-height);
 	color: var(--primary);
