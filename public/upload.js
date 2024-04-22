@@ -13,10 +13,12 @@ document.getElementById('fileInput').addEventListener('change', function() {
 		preview.style.display = 'block';
 
 		// 요소들 보이고말고 
-		document.querySelector('.description').style.display = 'none';
-		document.querySelector('.confirmation').style.display = 'block';
-		document.querySelector('.custom-file-input').style.display = 'none';
-		document.querySelector('.active_submit').style.display = 'inline-block';
+		// document.querySelector('.description').style.display = 'none';
+		// document.querySelector('.confirmation').style.display = 'block';
+		// document.querySelector('.custom-file-input').style.display = 'none';
+		// document.querySelector('.active_submit').style.display = 'inline-block';
+		document.getElementById('fileLabel').style.display = 'none';
+		document.getElementById('submitBtn').style.display = 'inline-block';
 	};
 	reader.readAsDataURL(file);
 });
