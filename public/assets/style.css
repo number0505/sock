@@ -68,6 +68,26 @@ canvas #canvasElement{
 	transform: scale(15); 
 	
 }
+
+#page1-content_desktop {
+	display: flex;
+}
+
+#left-text_desktop{
+	background-color: var(--secondary);
+	width: calc(100% / 3);
+}
+
+#right-text_desktop{
+	background-color: var(--secondary);	
+	width: calc(100% / 3);
+
+}
+
+#page-title_desktop {
+	width: calc(100% / 3);
+}
+
 #page2_mobile {
 	z-index: 1; 
 	transform: scale(2); 
