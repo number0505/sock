@@ -62,7 +62,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
     const rgb = `rgb(${sockFound.r} ${sockFound.g} ${sockFound.b})`;
     res.write(`
       <svg width="230" height="378" viewBox="0 0 230 378" xmlns="http://www.w3.org/2000/svg">
-        <path d="M145.989 0L112.077 188.911L99.7662 212.831L10.1481 308.157L0 338.786L12.7401 371.615L42.1648 377.782L73.1848 366.521L163.606 296.431L188.39 280.877L202.191 261.826L205.437 228.937L197.976 196.431L230 14.8134L145.989 0Z" fill="${rgb}" stroke="black" />
+        <path d="M145.989 0L112.077 188.911L99.7662 212.831L10.1481 308.157L0 338.786L12.7401 371.615L42.1648 377.782L73.1848 366.521L163.606 296.431L188.39 280.877L202.191 261.826L205.437 228.937L197.976 196.431L230 14.8134L145.989 0Z" fill="${rgb}" stroke="#4142F4" stroke-width="3"/>
       </svg>
       <p>${sockFound.description}</p>
       <p>Tag1: ${sockFound.tag1} Tag2: ${sockFound.tag2} Tag3: ${sockFound.tag3}</p>
