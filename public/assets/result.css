@@ -14,7 +14,7 @@
 
 	/* LINE HEIGHT */
 	--h1-height: 100%;
-	--p-height: 150%;
+	--p-height: 160%;
 
 	/* SPACING */
 	--spacing: 1em;
@@ -26,13 +26,11 @@
 	--bg-color: #E9DFCF;
 	--black: #211F1B;
 
+	/* SCREEN SIZE */
+	--100vw-padding: calc(100vw - 32px);
+
 }
 
-
-
-p{
-	color: red;
-}
 
 body{
 	padding: 16px 16px; /* var(--font-size); */
@@ -46,6 +44,14 @@ body{
 	font-family: var(--h1-font);
 
 	/* border: 10px solid RED; */
+}
+
+main{
+	width: var(--100vw-padding);
+}
+
+h1{
+	margin: 24px 0 !important;
 }
 
 img{
@@ -101,10 +107,12 @@ p{
 
 .description{
 	padding: 16px;
+	width: calc(100vw - 64px);
+
 	background-color: white;
 
 	color: var(--primary);
 	font-family: var(--p-font);
-	font-size: var(--font-size);
+	font-size: 16px; /* var(--font-size); */
 	line-height: var(--p-height);
 }

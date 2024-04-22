@@ -79,9 +79,12 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
           <span class="tag"> ${sockFound.tag2}</span> 
           <span class="tag"> ${sockFound.tag3}</span>
         </p>
+        <h1>The traits of your sock</h1>
         <img width=200 src="resources/${sockFound.file}"></img>
         <p class="description">${sockFound.description}</p>
       </main>
+      <footer>
+      </foooter>
     `)
   } else {
     res.write(`<p>No sock found</p>`);
