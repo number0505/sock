@@ -5,19 +5,26 @@
 	--font-size: 16px !important;
 	--h1-size: calc(var(--font-size) * 4); 
 	--h2-size: calc(var(--font-size) * 1.3); 
+	--h3-size: calc(var(--font-size) * 1.2);
 	--btn-size: 20px;
 
 	/* FONT STYLE */
   --h1-font: "Oswald", sans-serif;
 	--h2-font: "Oswald", sans-serif;
-  --p-font: "Inter", sans-serif;
+  --h3-font: "Inter", sans-serif;
+	--p-font: "Inter", sans-serif;
+
 
 	/* FONT WEIGHT */
 	--h1-weight: 400;
+	--h2-weight: 300;
+	--h2-weight: 300;
+
 
 	/* LINE HEIGHT */
 	--h1-height: 100%;
-	--p-height: 150%;
+	--h3-height: 160%;
+	--p-height: 160%;
 
 	/* SPACING */
 	--spacing: 1em;
@@ -28,6 +35,7 @@
 	--secondary: #B47230;
 	--bg-color: #E9DFCF;
 	--black: #211F1B;
+	--white: white;
 
 	/* PADDING */
   --padding: var(--font-size);
@@ -228,21 +236,31 @@ button:hover {
 
 h1 { 
 	font-family: var(--h1-font);
-
 	font-weight: var(--h1-weight);
 	text-transform: uppercase;
 	line-height: var(--h1-height);
 	color: var(--primary);
+
 }
 
 
 
 h2 { 
-	font-family: var(--h1-font);
-	font-weight: var(--h1-weight);
+	font-family: var(--h2-font);
+	font-weight: var(--h2-weight);
+	font-size: var(--h2-size);
 	color: var(--white);
+	text-transform: uppercase;
+
 }
 
+h3 { 
+	font-family: var(--h3-font);
+	font-weight: var(--h3-weight);
+	font-size: var(--h3-size);
+	line-height: var(--h3-height);
+	color: var(--white);
+}
 p{
 	font-size: var(--font-size);
 	font-family: var(--p-font);
