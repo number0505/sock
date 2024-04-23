@@ -326,7 +326,7 @@ p{
 		font-family: var(--p-font);
 		white-space: nowrap;
 		border-radius: 22222px;
-		padding: 8px 16px;
+		padding: 16px 24px;
 		width: fit-content;
 
 		cursor: pointer;
