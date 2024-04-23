@@ -29,6 +29,9 @@
 	--bg-color: #E9DFCF;
 	--black: #211F1B;
 
+	/* PADDING */
+  --padding: var(--font-size);
+ 
 }
 
 
@@ -180,9 +183,9 @@ canvas #canvasElement{
 	transition: all 0.3s;
 	z-index: 1000;
 
-	color: white; /* 텍스트 컬러 */
+	color: var(--white);/* 텍스트 컬러 */
 	background-color: transparent; /* 배경색 투명 */
-  border: 2px solid white;
+  border: 2px solid var(--white);
 	border-radius: 22222px;
 
 }
@@ -191,7 +194,7 @@ canvas #canvasElement{
 /*  ??? - upload페이지에는 안먹힘  */
 button:hover {
   background-color: rgb(81, 0, 255);
-	color: white;
+	color: var(--white);
 }
 
 /* 확인해서 지울거지워야함 */
@@ -235,7 +238,9 @@ h1 {
 
 
 h2 { 
-	font-weight: bold; 
+	font-family: var(--h1-font);
+	font-weight: var(--h1-weight);
+	color: var(--white);
 }
 
 p{
@@ -278,6 +283,7 @@ p{
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
+		padding: var(--padding);
 	}
 	
 	#page-title_desktop {
@@ -293,6 +299,7 @@ p{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		padding: var(--padding);
 	}
 
 	.btn {
@@ -308,9 +315,9 @@ p{
 		transition: all 0.3s;
 		z-index: 1000;
 		
-    color: white;
+		color: var(--white);
     background-color: transparent;
-    border: 2px solid white;
+    border: 2px solid var(--white);
     border-radius: 22222px;
 	}
 
