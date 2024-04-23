@@ -104,6 +104,23 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
         <a href='/' class='btn'>Match Your Sock</a>
       </main>
       <footer id="gradient"></footer>
+      <script>
+      window.onscroll = function() {
+        const footer = document.getElementById('gradient');
+        const windowHeight = window.innerHeight;
+        const bodyHeight = document.body.offsetHeight;
+        const scrolledFromTop = window.scrollY;
+        const scrollableHeight = bodyHeight - windowHeight;
+    
+        if (scrolledFromTop >= scrollableHeight) {
+            footer.style.display = 'none';
+        } else {
+            footer.style.display = 'block';
+        }
+    };
+    
+    
+      </script>
     `)
   } else {
     res.write(`<p>No sock found</p>`);
