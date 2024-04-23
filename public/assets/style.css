@@ -181,10 +181,7 @@ canvas #canvasElement{
 	width: fit-content;
 	height: fit-content;
 	/* 정확히 중앙에 오도록 조정 */
-	position: fixed;
-	left: 50%; 
-	transform: translateX(-50%); 
-	bottom: 40px;
+
 
 	cursor: pointer;
 	transition: all 0.3s;
@@ -197,6 +194,13 @@ canvas #canvasElement{
 
 }
 
+.btn_center{
+	position: fixed;
+	left: 50%; 
+	transform: translateX(-50%); 
+	bottom: 40px;
+
+}
 
 /*  ??? - upload페이지에는 안먹힘  */
 button:hover {

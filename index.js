@@ -110,20 +110,17 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
       <footer id="gradient"></footer>
       <script>
       window.addEventListener('scroll', () => {
-        const scrollPosition = window.pageYOffset;
-        const maxScroll = window.innerHeight;
-        const gradient = document.getElementById('gradient')
+          var footer = document.getElementById('gradient');
+          var windowHeight = window.innerHeight;
+          var bodyHeight = document.body.offsetHeight;
+          var scrolledFromTop = window.scrollY;
+          var scrollableHeight = bodyHeight - windowHeight;
       
-        if(scrollPosition >= maxScroll) {
-          window.scrollTo(0, maxScroll);
-          if (gradient) {
-            gradient.style.display = 'none'; // 버튼 표시
+          if (scrolledFromTop >= scrollableHeight) {
+              footer.style.display = 'none';
+          } else {
+              footer.style.display = 'block';
           }
-        } else {
-          if (gradient) {
-            gradient.style.display = 'block'; // 스크롤 중 버튼 숨김
-          }
-        }
       });
       </script>
     `)
