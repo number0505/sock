@@ -103,8 +103,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
         <a href='/upload' class='btn'>Try again</a>
         <a href='/' class='btn'>Match Your Sock</a>
       </main>
-      <footer>
-      </foooter>
+      <footer id="gradient"></footer>
     `)
   } else {
     res.write(`<p>No sock found</p>`);
