@@ -64,25 +64,27 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
 
       <main>
         <h1>Your sock’s profile</h1>
-        <div >
+        <div class="sock_illustration whitebox">
           <svg width="186" height="302" viewBox="0 0 208 320" xmlns="http://www.w3.org/2000/svg">
           <path d="M117.857 0.0620117L90.6561 151.03L80.781 170.146L8.89683 246.326L0.756836 270.803L10.9759 297.038L34.578 301.967L59.4596 292.968L131.988 236.955L151.867 224.525L162.937 209.3L165.541 183.017L159.557 157.04L185.244 11.9001L117.857 0.0620117Z" fill="${rgb}" stroke="#4142F4" stroke-width="5"/>
           </svg>
         </div>
         
-        <div>
-          <span class="rgb">R</span>
-          <span>${sockFound.r}</span>
-          <span class="rgb">G</span>
-          <span>${sockFound.g}</span>
-          <span class="rgb">B</span>
-          <span>${sockFound.b}</span>
+        <div class="sock_profile whitebox">
+          <div>
+            <span class="rgb">R</span>
+            <span>${sockFound.r}</span>
+            <span class="rgb">G</span>
+            <span>${sockFound.g}</span>
+            <span class="rgb">B</span>
+            <span>${sockFound.b}</span>
+          </div>
+          <div>
+            <span class="tag"> ${sockFound.tag1}</span>
+            <span class="tag"> ${sockFound.tag2}</span> 
+            <span class="tag"> ${sockFound.tag3}</span>
+          </div>
         </div>
-        <p>
-          <span class="tag"> ${sockFound.tag1}</span>
-          <span class="tag"> ${sockFound.tag2}</span> 
-          <span class="tag"> ${sockFound.tag3}</span>
-        </p>
       </main>
         <h1>The perfect match for your sock</h1>
         <img width=200 src="resources/${sockFound.file}"></img>
