@@ -78,8 +78,7 @@ canvas #canvasElement{
 	justify-content: space-between;
 	width: 100%;
 	height: 100%;
-	padding-top: 40px;
-	padding-bottom: 80px;
+	padding: 16px 16px 104px;
 }
 
 #left-text_mobile {
