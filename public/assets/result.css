@@ -6,7 +6,6 @@
 
 
 body{
-	padding: 16px 16px; /* var(--font-size); */
 	margin: 0 !important;
 	height: 100vh; /* 전체 높이를 화면에 맞춤 */
 	width: 100vw;
@@ -26,6 +25,7 @@ a{
 }
 main{
 	width: var(--100vw-padding);
+	padding: 16px 16px;
 }
 
 h1{
@@ -50,7 +50,6 @@ img{
 	color: white;
 
 	padding: 12px 16px;
-	margin-right: 4px;
 }
 
 
@@ -63,13 +62,11 @@ img{
 	text-transform: lowercase;
 
 	padding: 8px 16px;
-	margin-right: 4px;
 }
 
 span{
 	font-family: var(--p-font);
 	font-size: 20px;
-	margin-right: 8px;
 }
 
 p{
@@ -84,11 +81,24 @@ p{
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	height: 100vh;
+	padding: 16px;
+	margin-bottom: 16px;
 }
 .sock_profile{
 	 
 }
+
+.color-container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.tag-container {
+	display: flex;
+	justify-content: space-around;
+}
+
 .description{
 	padding: 16px;
 	width: calc(100vw - 64px);
@@ -99,4 +109,8 @@ p{
 	font-family: var(--p-font);
 	font-size: 16px; /* var(--font-size); */
 	line-height: var(--p-height);
+}
+
+.btn {
+	position: static;
 }

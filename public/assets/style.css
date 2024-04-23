@@ -179,7 +179,7 @@ canvas #canvasElement{
 	border-radius: 22222px;
 	padding: 12px 20px;
 	width: fit-content;
-
+	height: fit-content;
 	/* 정확히 중앙에 오도록 조정 */
 	position: fixed;
 	left: 50%; 
