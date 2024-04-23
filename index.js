@@ -98,8 +98,8 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
       </main>
       <main>
         <h1>The perfect match for your sock</h1>
-        <img width=200 src="resources/${sockFound.file}"></img>
-        <p class="description">${sockFound.description}</p>
+        <img class="whitebox" width=200 src="resources/${sockFound.file}"></img>
+        <p class="description whitebox">${sockFound.description}</p>
         <div class="btn">
           <a href='/upload'>Try again</a>
         </div>
