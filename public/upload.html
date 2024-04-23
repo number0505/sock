@@ -22,28 +22,27 @@
 					<div>with Their</div> 
 					<div>Other Half</div> 
 				</h1>
-			</div>	
-		</div>
-		
-		<div class="footer">
-			<p class="guide">
-				Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match.
-			</p>
-			<p class="confirmation">Image uploaded successfully!</p>
+			</div>		
+			
+			<div class="footer">
+				<p class="guide">
+					Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match.
+				</p>
+				<p class="confirmation">Image uploaded successfully!</p>
 
-           
-			<form method='post' id="myForm" action='/result' enctype='multipart/form-data'>
-				<input type='file' id='fileInput' name='image' style='display: none;' />
-				<img id="preview" src="" alt="image preview" style="max-width: 100%; height: auto; display: none;" />
-      	<label id="fileLabel" class='custom-file-input btn'>Choose a pic</label>
-      	<input type='submit' id='submitBtn' class='active_submit btn' style='display:none;'/>
-				<div id="loadingSpinner" style="display:none;">
-					<div class="spinner"></div>
-				</div>
-      </form>
-			<!-- 이미지 사이즈 나중에 수정 필요 -->
+							
+				<form method='post' id="myForm" action='/result' enctype='multipart/form-data'>
+					<input type='file' id='fileInput' name='image' style='display: none;' />
+					<img id="preview" src="" alt="image preview" style="max-width: 100%; height: auto; display: none;" />
+					<label id="fileLabel" class='custom-file-input btn'>Choose a pic</label>
+					<input type='submit' id='submitBtn' class='active_submit btn' style='display:none;'/>
+					<div id="loadingSpinner" style="display:none;">
+						<div class="spinner"></div>
+					</div>
+				</form>
+				<!-- 이미지 사이즈 나중에 수정 필요 -->
+			</div>
 		</div>
-
 		
 		<script src="script.js"></script>	
 		<script src="upload.js"></script>
