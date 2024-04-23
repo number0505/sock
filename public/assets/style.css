@@ -260,6 +260,7 @@ h3 {
 	font-size: var(--h3-size);
 	line-height: var(--h3-height);
 	color: var(--white);
+	margin-bottom: 24px;
 }
 p{
 	font-size: var(--font-size);
