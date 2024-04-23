@@ -76,7 +76,9 @@ p{
 .whitebox{
 	background-color: var(--white);
 	border: 2px var(--primary) solid;
+	padding: 16px;
 }
+
 .sock_illustration{
 	display: flex;
 	justify-content: center;
@@ -90,13 +92,14 @@ p{
 
 .color-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 }
 
 .tag-container {
 	display: flex;
-	justify-content: space-around;
+	justify-content: center;
+	gap: 8px;
 }
 
 .description{
