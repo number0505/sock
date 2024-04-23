@@ -69,6 +69,8 @@ canvas #canvasElement{
 #page1_mobile {
 	z-index: 2; 
 	transform: scale(15);
+	font-size: 125px;
+
 }
 
 /* for flexbox */
@@ -83,7 +85,6 @@ canvas #canvasElement{
 
 #left-text_mobile {
 	z-index: 4;
-	font-size: 125px;
 	display: flex;
 	flex-direction: column;
 }
@@ -94,7 +95,6 @@ canvas #canvasElement{
 
 #right-text_mobile {
 	z-index: 4;
-	font-size: 125px;
 	display: flex;
 	flex-direction: column;
 
