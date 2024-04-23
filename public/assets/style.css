@@ -62,12 +62,16 @@ canvas #canvasElement{
 	justify-content: center;
 	transition: transform 0.5s;
 }
+
+
+/* PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 */
+
 #page1_mobile {
 	z-index: 2; 
-	transform: scale(15); 
-	
+	transform: scale(15);
 }
 
+/* for flexbox */
 #page1-content_mobile {
 	display: flex;
 	flex-direction: column;
@@ -130,9 +134,11 @@ canvas #canvasElement{
 	width: calc(100% / 3);
 }
 
+
+/* PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 */
 #page2_mobile {
 	z-index: 1; 
-	transform: scale(2); 
+	transform: scale(3); 
 	background-color: #E9DFCF;
 
 }
@@ -237,7 +243,6 @@ button:hover {
 /* Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph Paragraph */
 
 h1 { 
-	font-size: var(--h1-size); 
 	font-family: var(--h1-font);
 
 	font-weight: var(--h1-weight);
@@ -245,6 +250,8 @@ h1 {
 	line-height: var(--h1-height);
 	color: var(--primary);
 }
+
+
 
 h2 { 
 	font-weight: bold; 
