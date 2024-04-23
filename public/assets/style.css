@@ -49,7 +49,6 @@ canvas #canvasElement{
 	mask-position: center;
 	mask-size: contain; */
 	clip-path: url(#sock-svg);
-
 }
 
 .page {
@@ -69,6 +68,46 @@ canvas #canvasElement{
 	
 }
 
+#page1-content_mobile {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	height: 100%;
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+#left-text_mobile {
+	z-index: 4;
+	font-size: 125px;
+	display: flex;
+	flex-direction: column;
+}
+
+#less-title {
+	align-self: flex-end;
+}
+
+#right-text_mobile {
+	z-index: 4;
+	font-size: 125px;
+	display: flex;
+	flex-direction: column;
+
+}
+
+#more-title {
+	align-self: flex-end;
+}
+
+#page-title_mobile {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+}
+
 #page1-content_desktop {
 	display: flex;
 }
@@ -76,6 +115,9 @@ canvas #canvasElement{
 #left-text_desktop{
 	background-color: var(--secondary);
 	width: calc(100% / 3);
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 #right-text_desktop{
@@ -242,7 +284,7 @@ p{
 		font-family: var(--p-font);
 		white-space: nowrap;
 		border-radius: 22222px;
-		padding: 16px 24px;
+		padding: 8px 16px;
 		width: fit-content;
 
 		cursor: pointer;
@@ -257,6 +299,12 @@ p{
     border: 2px solid white;
     border-radius: 22222px;
 	}
+
+	#nextPageButton_desktop {
+		position: static;
+		transform: none;
+	}
+
 
 	element.style {
 		display: block;
