@@ -64,11 +64,11 @@ canvas #canvasElement{
 }
 
 
-/* PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 */
+/* PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 PAGE1 */
 
 #page1_mobile {
 	z-index: 2; 
-	transform: scale(15);
+	transform: scale(350);
 	font-size: 125px;
 
 }
@@ -122,6 +122,14 @@ canvas #canvasElement{
 	transition: transform 2s;
 }
 
+/* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
+#page1_desktop {
+	z-index: 2; 
+	transform: scale(350); 
+	flex-direction: column;	
+	font-size: 125px;
+}
+
 #page1-content_desktop {
 	display: flex;
 }
@@ -144,17 +152,13 @@ canvas #canvasElement{
 }
 
 
-/* PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 */
+
+/* PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 PAGE2 */
 #page2_mobile {
 	z-index: 1; 
-	transform: scale(3); 
+	transform: scale(2.5); 
 	background-color: #E9DFCF;
 
-}
-#page1_desktop {
-	z-index: 2; 
-	transform: scale(15); 
-	flex-direction: column;	
 }
 
 #upper-bar {
@@ -169,9 +173,12 @@ canvas #canvasElement{
 	flex-grow: 1;
 
 }
+
+/* DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP DESKTOP */
+
 #page2_desktop {
 	z-index: 1; 
-	transform: scale(2); 
+	transform: scale(2.5); 
 	background-color: #E9DFCF;
 }
 
