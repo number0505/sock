@@ -1,7 +1,4 @@
-root {
 
-
-}
 
 html{
 	height: 100vh; /* 전체 높이를 화면에 맞춤 */
@@ -39,9 +36,15 @@ body {
 h1{
 	font-size: var(--h1-size);
 }
+
+h3{
+	color: var(--primary);
+}
 p{
 	padding: 0 0 40px 0 ;
-
+}
+#guide_img{
+	margin: 40px 0;
 }
 
 .content-container {
@@ -75,9 +78,6 @@ p{
 
 }
 
-.guide{
-	font-size: var(--font-size);
-}
 
 .confirmation{
 	display:none;
