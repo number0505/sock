@@ -16,9 +16,9 @@ body {
 	height: 100vh; /* 전체 높이를 화면에 맞춤 */
 	width: 100vw;
 
-	display: grid;
+	/* display: grid;
 	grid-template-columns: repeat(auto-fill, 1fr);
-	row-gap: calc(3 * var(--font-size));/* ???? */
+	row-gap: calc(3 * var(--font-size));???? */
 	background:#E9DFCF;/* var(--bg-color); */
 	overflow-x: hidden; /* 가로 스크롤 숨김 */
 	/* justify-items: center; */ 
@@ -45,10 +45,9 @@ p{
 }
 
 .content-container {
-	/* display: flex;
+	display: flex;
 	flex: 1;
 	flex-direction: column;
-	flex-grow: 1; */
 /* 
 	height: 100vh; */
 
@@ -63,11 +62,16 @@ p{
 
 .header {
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
+	flex-grow: 1;
+
 }
 
 .footer {
 	/* position: fixed;   */
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
+	align-self: flex-end;
+	flex-grow: 1;
+
 
 }
 
