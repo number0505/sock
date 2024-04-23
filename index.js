@@ -100,8 +100,12 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
         <h1>The perfect match for your sock</h1>
         <img width=200 src="resources/${sockFound.file}"></img>
         <p class="description">${sockFound.description}</p>
-        <a href='/upload' class='btn'>Try again</a>
-        <a href='/' class='btn'>Match Your Sock</a>
+        <div class="btn">
+          <a href='/upload'>Try again</a>
+        </div>
+        <div class="btn">
+          <a href='/'>Match Your Sock</a>
+        </div>
       </main>
       <footer id="gradient"></footer>
       <script>
@@ -113,11 +117,11 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
         if(scrollPosition >= maxScroll) {
           window.scrollTo(0, maxScroll);
           if (gradient) {
-            gradient.style.display = 'block'; // 버튼 표시
+            gradient.style.display = 'none'; // 버튼 표시
           }
         } else {
           if (gradient) {
-            gradient.style.display = 'none'; // 스크롤 중 버튼 숨김
+            gradient.style.display = 'block'; // 스크롤 중 버튼 숨김
           }
         }
       });
