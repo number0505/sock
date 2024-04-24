@@ -137,7 +137,6 @@ p{
 .description{
 	padding: 16px !important;
 	width: var(--result-content-size);
-
 	background-color: white;
 }
 
@@ -195,6 +194,10 @@ p{
 		align-items: flex-start;
 		gap: 48px;
 		min-height: 100vh;
+	}
+
+	.description{
+		height: 152px;
 	}
 
 	.btn_group{
