@@ -365,6 +365,7 @@ p{
 		flex-direction: column;
 		justify-content: space-between;
 		padding: 120px 16px;
+		gap: 24px;
 	}
 
 	.btn {
