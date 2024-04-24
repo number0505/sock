@@ -145,6 +145,9 @@ p{
 	position: static;
 	width: calc(100% - 41px);
 	text-align: center;
+	
+	display: inline-grid;
+
 }
 
 

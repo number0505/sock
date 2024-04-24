@@ -18,8 +18,8 @@ document.getElementById('fileInput').addEventListener('change', function() {
 		// document.querySelector('.custom-file-input').style.display = 'none';
 		// document.querySelector('.active_submit').style.display = 'inline-block';
 		document.getElementById('fileLabel').style.display = 'none';
-		document.getElementById('guide_img').style.display = 'none';
-		document.getElementById('guide_txt').style.display = 'none';
+		document.getElementById('guide').style.display = 'none';
+		document.getElementById('guide').style.display = 'none';
 		document.getElementById('upload_header').style.display = 'none';
 
 
