@@ -33,17 +33,13 @@ document.getElementById('myForm').addEventListener('submit', function() {
 	var button = document.getElementById('submitBtn');
 	var spinner = document.getElementById('loadingSpinner');
 	
-	button.style.display = 'none'; // Hide submit button
-	spinner.style.display = 'inline'; // Show loading spinner
+	button.style.display = 'none'; // Hide
+	spinner.style.display = 'inline'; // Show 
 
-	// Optionally, submit the form after a delay or when ready
-	// For demonstration, here we just simulate a delay
 	setTimeout(function() {
-			// You might want to submit the form programmatically here
-			// e.g., this.submit();
-			button.style.display = 'inline'; // Show the button again
-			spinner.style.display = 'none'; // Hide the spinner
-	}, 10000); // Simulate 2 seconds of processing time
+			button.style.display = 'inline'; // Show 
+			spinner.style.display = 'none'; // Hide 
+	}, 30000); // processing time
 });
 
 function resetForm() {
