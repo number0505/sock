@@ -74,7 +74,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
     res.write(`
 
       <main>
-        <img class="whitebox" width=2 src="resources/${sockFound.file}"></img>
+        <img width=2 src="content/icon_analysis.svg}"></img>
         <h1>Your sock’s profile</h1>
         <div class="sock_illustration whitebox">
           <svg width="186" height="302" viewBox="0 0 208 320" xmlns="http://www.w3.org/2000/svg">
@@ -98,9 +98,12 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
           </div>
         </div>
       </main>
+
+
       <main>
+        <img width=2 src="public/content/icon_analysis.svg}"></img>
         <h1>The perfect match for your sock</h1>
-        <img class="whitebox" width=200 src="resources/${sockFound.file}"></img>
+        <img class="whitebox" width=200 src="content/icon_matching.svg"></img>
         <p class="description whitebox">${sockFound.description}</p>
         <div class="btn">
           <a href='/upload'>Try again</a>
