@@ -90,12 +90,15 @@ section{
 	flex-grow: 1;
 }
 
+#sock_confirmation{
+	margin-left: 140px;
+}
 
-.confirmation{
+/* .confirmation{
 	display:none;
 	padding-top: 40px;
 	padding-bottom: 8px;
-}
+} */
 
 /* Choose a pic 버튼 */
 .custom-file-input {

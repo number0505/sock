@@ -209,6 +209,11 @@ svg.masks {
 	bottom: 40px;
 }
 
+.btn:hover{
+	background-color: var(--hover);
+	color: var(--white);
+	border: 2px solid var(--hover);
+}
 /*  ??? - upload페이지에는 안먹힘  */
 button:hover {
   background-color: var(--hover);
