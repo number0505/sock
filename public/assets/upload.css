@@ -122,6 +122,39 @@ p{
 	/* box-shadow: 0 2px 4px var(--primary); */
 }
 
+#myForm {
+	position: relative;
+}
+
+#loadingSpinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	background-color: white;
+	padding: 10px;
+	border-radius: 50%;
+	transform: translate(-50%, -50%);
+}
+
+
+@media (min-width: 768px) {
+	.content-container {
+		flex-direction: row;
+		max-width: 70vw;
+		margin-left: auto;
+		margin-right: auto;
+		gap: 16px;
+	}
+
+	.header {
+		width: 50%;
+	}
+
+	.footer {
+		width: 50%;
+	}
+}
+
 /* Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font Font */
 
 @keyframes spin {

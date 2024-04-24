@@ -25,6 +25,7 @@ svg.masks {
 @media (min-width: 768px) {
 	#desktop {
 		display: block;
+		max-width: 70vw;
 	}
 	#mobile{
 		display: none;

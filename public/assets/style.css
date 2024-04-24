@@ -294,15 +294,28 @@ p{
 		transform: scale(350); 
 		flex-direction: column;	
 		font-size: 125px;
+		/* max-width: 70vw;
+		margin-left: auto;
+		margin-right: auto; */
 	}
 	
 	#page1-content_desktop {
 		display: flex;
+		justify-content: center;
+		width: 100%;
 	}
 	
+	#left-area {
+		width: calc(100% / 3);
+		background-color: var(--secondary);
+		display: flex;
+		justify-content: flex-end;
+	}
+
 	#left-text_desktop{
 		background-color: var(--secondary);
-		width: calc(100% / 3);
+		width: 100%;
+		max-width: 400px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
@@ -311,11 +324,19 @@ p{
 	
 	#page-title_desktop {
 		width: calc(100% / 3);
+		min-width: 33vw;
 	}
 	
+	#right-area {
+		width: calc(100% / 3);
+		background-color: var(--secondary);
+	}
+
 	#right-text_desktop{
 		background-color: var(--secondary);	
-		width: calc(100% / 3);
+		width: 100%;
+
+		max-width: 400px;
 
 		justify-content: flex-end;
 

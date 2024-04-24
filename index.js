@@ -59,6 +59,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
   <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="assets/reset.css" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="/assets/style.css">
   <link rel="stylesheet" type="text/css" href="/assets/result.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
