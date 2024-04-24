@@ -107,8 +107,8 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
         </section>
 
         <section>
-          <a href='/upload' class='btn'>Try again</a>
-          <a href='/' class='btn'>Match Your Sock</a>
+          <a href='/' class='btn primary_btn'>Match Your Sock</a>
+          <a href='/upload' class='btn outlined_btn'>Try again</a>
         </section>
 
       </div>

@@ -194,9 +194,9 @@ canvas #canvasElement{
 	background-color: var(--primary); 
 }
 .outlined_btn{
-	color: var(--white);
+	color: var(--primary);
 	background-color: transparent; 
-  border: 2px solid var(--white);
+  border: 2px solid var(--primary);
 }
 
 .btn_center{
