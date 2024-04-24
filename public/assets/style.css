@@ -178,22 +178,25 @@ canvas #canvasElement{
 	font-family: var(--p-font);
 	white-space: nowrap;
 
-	border-radius: 22222px;
 	padding: 12px 20px;
 	width: fit-content;
 	height: fit-content;
 	/* 정확히 중앙에 오도록 조정 */
 
-
 	cursor: pointer;
 	transition: all 0.3s;
 	z-index: 1000;
-
-	color: var(--white);/* 텍스트 컬러 */
-	background-color: transparent; /* 배경색 투명 */
-  border: 2px solid var(--white);
 	border-radius: 22222px;
+}
 
+.primary_btn{
+	color: var(--white);
+	background-color: var(--primary); 
+}
+.outlined_btn{
+	color: var(--white);
+	background-color: transparent; 
+  border: 2px solid var(--white);
 }
 
 .btn_center{
@@ -260,7 +263,59 @@ p{
 .faded { opacity: 0.333 }
 
 
+
+
+
+
+
+
 @media (min-width: 768px) {
+
+	:root {
+
+		/* FONT SIZE */
+		--font-size: 18px !important;
+		--h1-size: calc(var(--font-size) * 4.5); 
+		--h2-size: calc(var(--font-size) * 1.5); 
+		--h3-size: 20px;
+		--btn-size: 20px;
+	
+		/* FONT STYLE */
+		--h1-font: "Oswald", sans-serif;
+		--h2-font: "Oswald", sans-serif;
+		--h3-font: "Inter", sans-serif;
+		--p-font: "Inter", sans-serif;
+	
+	
+		/* FONT WEIGHT */
+		--h1-weight: 400;
+		--h2-weight: 300;
+		--h2-weight: 300;
+	
+	
+		/* LINE HEIGHT */
+		--h1-height: 100%;
+		--h3-height: 150%;
+		--p-height: 160%;
+	
+		/* SPACING */
+		--spacing: 1em;
+		--p-spacing: -0.4px;
+	
+		/* COLOR */
+		--primary: #4142F4;
+		--secondary: #B47230;
+		--bg-color: #E9DFCF;
+		--black: #211F1B;
+		--white: white;
+	
+		/* PADDING */
+	 
+		/* ETC */
+		--result-content-size: 358px;
+	}
+
+
 	#desktop {
 		display: block;
 	}
@@ -327,24 +382,8 @@ p{
 	}
 
 	.btn {
-		text-transform: uppercase;
-		font-size: var(--btn-size);
-		font-family: var(--p-font);
-		white-space: nowrap;
-		border-radius: 22222px;
 		padding: 16px 24px;
-		width: fit-content;
-
-		cursor: pointer;
-		transition: all 0.3s;
-		z-index: 1000;
-		
-		color: var(--white);
-    background-color: transparent;
-    border: 2px solid var(--white);
-    border-radius: 22222px;
 	}
-
 
 	#nextPageButton_desktop {
 		position: static;
