@@ -36,6 +36,7 @@
 	--bg-color: #E9DFCF;
 	--black: #211F1B;
 	--white: white;
+	--hover: #2c2cb0;
 
 	/* PADDING */
  
@@ -195,7 +196,7 @@
 
 /*  ??? - upload페이지에는 안먹힘  */
 button:hover {
-  background-color: var(--primary);
+  background-color: var(--hover);
 	color: var(--white);
 }
 
