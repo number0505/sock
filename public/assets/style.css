@@ -331,6 +331,9 @@ p{
 		background-color: var(--secondary);
 		display: flex;
 		justify-content: flex-end;
+
+		padding: 120px 0px 120px 80px;
+		gap: 24px;
 	}
 
 	#left-text_desktop{
@@ -340,7 +343,7 @@ p{
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		padding: 40px 16px;
+
 	}
 	
 	#page-title_desktop {
@@ -364,6 +367,7 @@ p{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		
 		padding: 120px 16px;
 		gap: 24px;
 	}
