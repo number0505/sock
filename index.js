@@ -101,7 +101,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
 
         <section>
           <img class="icon_img" src="content/icon_matching.svg">
-          <h1 class="section_title">The perfect match for your sock</h1>
+          <h1 class="section_title">The perfect match</h1>
           <img class="whitebox" width=200 src="resources/${sockFound.file}"></img>
           <p class="description whitebox">${sockFound.description}</p>
         </section>

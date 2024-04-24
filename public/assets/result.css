@@ -160,11 +160,20 @@ p{
 	}
 
 	main{
-
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
 		align-items: center;
 		gap: 16px;
 	}
+
+	.btn_group{
+		position: fixed;
+		flex-direction: row;
+		left: 50%; 
+		transform: translateX(-50%); 
+		bottom: 40px;
+		margin: 0px;
+	}
+
 }
