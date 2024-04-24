@@ -34,5 +34,17 @@
         "tag2": "Knitting",
         "tag3": "Wool",
         "url": "https://www.etsy.com/listing/1345976431/sweater-weather-socks-pattern-knitting"
+    },
+    {
+        "name": "half gray half white",
+        "file": "sports.jpg",
+        "description": "I love sports. I'm energetic and always cheerful. Let's enjoy life together!",
+        "r": "241",
+        "g": "241",
+        "b": "239",
+        "tag1": "Sock",
+        "tag2": "Athletic Works",
+        "tag3": "Wool",
+        "url": "https://www.amazon.com/Power-Cushion-Performance-Large-White/dp/B0174V9JVI"
     }
 ]
