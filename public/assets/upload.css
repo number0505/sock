@@ -72,7 +72,7 @@ section{
 	height: 90vh; /* Full height of the container */
 	text-align: center; /* Center text */
 }
-.header, .guide {
+.header, #guide {
 	flex-shrink: 0; /* 축소되지 않도록 설정 */
 	width: 100%; /* 전체 너비 */
 }
@@ -84,16 +84,13 @@ section{
 	margin: 40px 0 24px;
 }
 
-.guide {
+#guide {
 	/* position: fixed;   */
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
 	align-self: flex-end;
 	flex-grow: 1;
 }
 
-#sock_confirmation{
-	margin-left: 140px;
-}
 
 /* .confirmation{
 	display:none;
@@ -169,11 +166,16 @@ section{
 		margin: 140px 0;
 	}
 
-	.guide {
+	#guide {
 		width: 50%;
 		align-self: center;
 	}
 
+	#sock_confirmation{
+		margin-left: 140px;
+	}
+	
+	
 	form{
 		display: flex;
 		flex-direction: column;
