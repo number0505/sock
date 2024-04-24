@@ -9,9 +9,10 @@ html{
 
 /* 이게 뭐죠? */
 body {
-	padding: 16px 16px 180px 16px; /* var(--font-size); */
+	padding: 16px 16px 80px 16px; /* var(--font-size); */
 	background:#E9DFCF;/* var(--bg-color); */
 	overflow-x: hidden; /* 가로 스크롤 숨김 */
+
 
 	/* height: 100vh;  */
 	/* width: calc( 100vw - 32px); */
@@ -80,7 +81,7 @@ section{
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
 	flex-grow: 1;
 
-	margin-bottom: 40px;
+	margin: 40px 0 24px;
 }
 
 .guide {
@@ -160,7 +161,6 @@ section{
 	section{
 		flex-direction: row; /* Stack children vertically */
 		text-align: left;
-		/* align-items: center; Align children center horizontally */
 		justify-content: center;
 
 	}

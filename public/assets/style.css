@@ -5,7 +5,7 @@
 	--font-size: 16px !important;
 	--h1-size: 68px; 
 	--h2-size: calc(var(--font-size) * 1.5); 
-	--h3-size: 20px;
+	--h3-size: 18px;
 	--btn-size: 20px;
 
 	/* FONT STYLE */
@@ -283,11 +283,15 @@ p{
 
 	:root {
 
+
 		/* FONT SIZE */
+		--h3-size: 20px;
+
+
+
 		--font-size: 18px !important;
 		--h1-size: calc(var(--font-size) * 4.5); 
 		--h2-size: calc(var(--font-size) * 1.5); 
-		--h3-size: 20px;
 		--btn-size: 20px;
 	
 		/* FONT STYLE */
