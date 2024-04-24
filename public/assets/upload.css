@@ -12,7 +12,7 @@ body {
 	padding: 16px 16px 180px 16px; /* var(--font-size); */
 	background:#E9DFCF;/* var(--bg-color); */
 	overflow-x: hidden; /* 가로 스크롤 숨김 */
-	
+
 	/* height: 100vh;  */
 	/* width: calc( 100vw - 32px); */
 
@@ -55,14 +55,22 @@ p{
 	display: flex;
 	flex: 1;
 	flex-direction: column;
-	
-/* 
-	height: 100vh; */
 
 	position: static; /* 위치 고정 */
+	/* 
+	height: 100vh; */
 	/* bottom: 20px; 하단에서 20px 위에 위치 */
 }
 
+section{
+	display: flex;
+	flex-direction: column; /* Stack children vertically */
+	align-items: center; /* Align children center horizontally */
+	justify-content: center; /* Center content vertically within each section */
+	width: 10	0%; /* Example width */
+	height: 100%; /* Full height of the container */
+	text-align: center; /* Center text */
+}
 .header, .guide {
 	flex-shrink: 0; /* 축소되지 않도록 설정 */
 	width: 100%; /* 전체 너비 */
