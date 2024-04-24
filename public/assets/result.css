@@ -200,6 +200,10 @@ p{
 		height: 152px;
 	}
 
+	.sock_profile{
+		height: 152px;
+	}
+
 	.btn_group{
 		position: fixed;
 		flex-direction: row;

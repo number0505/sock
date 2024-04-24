@@ -2,7 +2,7 @@
     {
         "name": "white sock",
         "file": "her_socks.jpeg",
-        "description": "I'm as smooth as vanilla. I fit in everywhere.",
+        "description": "I'm as smooth and comforting as vanilla, effortlessly blending into any environment with ease and grace.",
         "r": "240",
         "g": "230",
         "b": "208",
@@ -14,7 +14,7 @@
     {
         "name": "forest sock",
         "file": "cozy_cabin.jpeg",
-        "description": "I love nature! Let's explore the unknown world together!",
+        "description": "I have a deep admiration for nature's beauty! Let's embark on adventures together, discovering the wonders of the unknown world!",
         "r": "185",
         "g": "190",
         "b": "157",
@@ -26,7 +26,7 @@
     {
         "name": "green wool sock",
         "file": "sock_wool.jpeg",
-        "description": "I am soft and warm. I want to spend the cold winter warmly together.",
+        "description": "I am gentle and comforting, providing coziness during chilly winters. Let's snuggle close and share warmth together.",
         "r": "31",
         "g": "48",
         "b": "51",
@@ -38,7 +38,7 @@
     {
         "name": "half gray half white",
         "file": "sports.jpg",
-        "description": "I love sports. I'm energetic and always cheerful. Let's enjoy life together!",
+        "description": "I have a great passion for sports. With my boundless energy and perpetual cheerfulness, let's embrace life's joys together and revel in them!",
         "r": "241",
         "g": "241",
         "b": "239",
