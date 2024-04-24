@@ -60,7 +60,7 @@ p{
 	/* bottom: 20px; 하단에서 20px 위에 위치 */
 }
 
-.header, .footer {
+.header, .guide {
 	flex-shrink: 0; /* 축소되지 않도록 설정 */
 	width: 100%; /* 전체 너비 */
 }
@@ -69,10 +69,10 @@ p{
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
 	flex-grow: 1;
 
-	margin-bottom: 40px;
+	margin: 140px 0;
 }
 
-.footer {
+.guide {
 	/* position: fixed;   */
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
 	align-self: flex-end;

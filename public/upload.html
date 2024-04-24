@@ -24,27 +24,24 @@
 				</h1>
 			</div>		
 			
-			<div class="footer">
+			<div class="guide">
 				<img id="guide_img" src="content/guide img.svg">
 
 				<h3 id="guide_txt">
 					Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match.
 				</h3>
 				<p class="confirmation">Image uploaded successfully!</p>
-
-							
-				<form method='post' id="myForm" action='/result' enctype='multipart/form-data'>
-					<input type='file' id='fileInput' name='image' style='display: none;' />
-					<img id="preview" src="" alt="image preview" style="max-width: 100%; height: auto; display: none;" />
-					<div id="loadingSpinner" style="display:none;">
-						<div class="spinner"></div>
-					</div>
-					<label id="fileLabel" class='custom-file-input btn primary_btn btn_center' onclick="document.getElementById('fileInput').click();">Choose a pic</label>
-					<input type='submit' id='submitBtn' class='active_submit primary_btn btn btn_center' style='display:none;'/>
-
-				</form>
 				<!-- 이미지 사이즈 나중에 수정 필요 -->
 			</div>
+			<form method='post' id="myForm" action='/result' enctype='multipart/form-data'>
+				<input type='file' id='fileInput' name='image' style='display: none;' />
+				<img id="preview" src="" alt="image preview" style="max-width: 100%; height: auto; display: none;" />
+				<div id="loadingSpinner" style="display:none;">
+					<div class="spinner"></div>
+				</div>
+				<label id="fileLabel" class='custom-file-input btn primary_btn btn_center' onclick="document.getElementById('fileInput').click();">Choose a pic</label>
+				<input type='submit' id='submitBtn' class='active_submit primary_btn btn btn_center' style='display:none;'/>
+			</form>
 		</div>
 		
 		<script src="script.js"></script>	
