@@ -33,6 +33,7 @@ main{
 }
 section{
 	max-width: 360px;
+	padding-top:48px;
 }
 
 .icon_img{
