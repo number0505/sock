@@ -161,6 +161,7 @@
 	font-size: var(--btn-size);
 	font-family: var(--p-font);
 	white-space: nowrap;
+	text-align: center;
 
 	padding: 12px 20px;
 	width: 300px !important;
