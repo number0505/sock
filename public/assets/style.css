@@ -29,6 +29,7 @@
 	/* SPACING */
 	--spacing: 1em;
 	--p-spacing: -0.4px;
+	--letter-spacing:-.5px;
 
 	/* COLOR */
 	--primary: #4142F4;
@@ -255,6 +256,7 @@ h3 {
 	line-height: var(--h3-height);
 	color: var(--white);
 	margin-bottom: 24px;
+	letter-spacing: var(--letter-spacing);
 }
 
 p{
