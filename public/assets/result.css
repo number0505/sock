@@ -45,10 +45,11 @@ section{
 	width: 75px;
 }
 
+
 h1{
 	margin: 24px 0 !important;
 	font-size: var(--h1-size);
-	
+	text-align: center;
 }
 
 img{
@@ -94,6 +95,9 @@ p{
 	background-color: var(--white);
 	border: 2px var(--primary) solid;
 	width: var(--result-content-size);
+
+	margin-bottom: 16px;
+
 }
 
 .sock_illustration{
@@ -102,11 +106,10 @@ p{
 	align-items: center;
 
 	padding: 16px;
-	margin-bottom: 16px;
 
 }
 .sock_profile{
-	margin-bottom: 16px;
+	/* margin-bottom: 16px; */
 	padding: 16px;
 
 }
@@ -137,6 +140,7 @@ p{
 	text-align: center;
 }
 
+
 #gradient {
 	position: fixed;
 	bottom: 0;
@@ -145,6 +149,7 @@ p{
 	height: 10vh;
 	display: block;
 	background: white;
+	background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
 }
 
 @media (min-width: 768px) {
