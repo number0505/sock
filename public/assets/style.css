@@ -213,8 +213,13 @@ button:hover {
 	color: var(--white);
 }
 
-/* 확인해서 지울거지워야함 */
+.btn_group{
+	margin-bottom: 128px;
 
+	display: flex;
+	flex-direction: column;	
+	gap: 16px;
+}
 
 /* aside { margin-bottom: calc(4 * var(--spacing)); } */
 
