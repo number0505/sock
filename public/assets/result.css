@@ -65,9 +65,7 @@ img{
 .rgb{
 	border-radius: 22222px;
 	background-color: var(--primary);
-/* 외않되?
-	width: 48px;
-	height: 48px; */
+
 
 	font-family: var(--p-font);
 	font-size: 20px;
@@ -85,7 +83,8 @@ img{
 	font-size: 16px !important;
 	text-transform: lowercase;
 
-	padding: 8px 16px;
+	padding: 8px 8px;
+	white-space: nowrap;
 }
 
 span{
