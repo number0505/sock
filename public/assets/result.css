@@ -87,7 +87,7 @@ span{
 }
 
 p{
-	padding: 0 0 24px 0 ;
+	/* padding: 0 0 24px 0 ; */
 }
 
 .whitebox{
@@ -122,18 +122,13 @@ p{
 	display: flex;
 	justify-content: center;
 	gap: 8px;
-}s
+}	
 
 .description{
 	padding: 16px !important;
 	width: var(--result-content-size);
 
 	background-color: white;
-
-	color: var(--primary);
-	font-family: var(--p-font);
-	font-size: 16px; /* var(--font-size); */
-	line-height: var(--p-height);
 }
 
 .btn {

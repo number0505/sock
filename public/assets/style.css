@@ -255,8 +255,6 @@ p{
 	letter-spacing: var(--p-spacing);
 
 	color: var(--primary);
-
-	/* padding: 0 0 40px 0 ; */
 }
 
 .faded { opacity: 0.333 }
