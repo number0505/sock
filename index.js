@@ -104,13 +104,15 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
           <h1 class="section_title">The perfect match for your sock</h1>
           <img class="whitebox" width=200 src="resources/${sockFound.file}"></img>
           <p class="description whitebox">${sockFound.description}</p>
-          <div class="btn">
-            <a href='/upload'>Try again</a>
-          </div>
-          <div class="btn">
-            <a href='/'>Match Your Sock</a>
-          </div>
         </section>
+
+        <div class="btn">
+        <a href='/upload'>Try again</a>
+        </div>
+        <div class="btn">
+        <a href='/'>Match Your Sock</a>
+        
+      </div>
       </main>
       
       <footer id="gradient"></footer>
