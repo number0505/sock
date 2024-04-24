@@ -74,6 +74,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
     res.write(`
 
       <main>
+        <img class="whitebox" width=2 src="resources/${sockFound.file}"></img>
         <h1>Your sock’s profile</h1>
         <div class="sock_illustration whitebox">
           <svg width="186" height="302" viewBox="0 0 208 320" xmlns="http://www.w3.org/2000/svg">
