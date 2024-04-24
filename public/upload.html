@@ -13,26 +13,29 @@
 
 	</head>	
 	<body>
-		<div class="content-container">
-			<div class="header">
-				<!-- <a href='/' class='btn'> Back </a> -->
-				<h1 id="upload_header">
-					<div>Matching Lost Socks with Their Other Half</div> 
-				</h1>
-				<h1 id="sock_confirmation" style='display: none;'>
-					<div>Looking for the match to this sock?</div>
-				</h1>
-			</div>		
-			
-			<div class="guide">
-				<img id="guide_img" src="content/guide img.svg">
+		<main class="content-container">
+			<section>
+				<div class="header">
+					<!-- <a href='/' class='btn'> Back </a> -->
+					<h1 id="upload_header">
+						<div>Matching Lost Socks with Their Other Half</div> 
+					</h1>
+					<h1 id="sock_confirmation" style='display: none;'>
+						<div>Looking for the match to this sock?</div>
+					</h1>
+				</div>		
+				
+				<div class="guide">
+					<img id="guide_img" src="content/guide img.svg">
+	
+					<h3 id="guide_txt">
+						Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match.
+					</h3>
+					<p class="confirmation">Image uploaded successfully!</p>
+					<!-- 이미지 사이즈 나중에 수정 필요 -->
+				</div>
+			</section>
 
-				<h3 id="guide_txt">
-					Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match.
-				</h3>
-				<p class="confirmation">Image uploaded successfully!</p>
-				<!-- 이미지 사이즈 나중에 수정 필요 -->
-			</div>
 			<form method='post' id="myForm" action='/result' enctype='multipart/form-data'>
 				<input type='file' id='fileInput' name='image' style='display: none;' />
 				<img id="preview" src="" alt="image preview" style="max-width: 100%; height: auto; display: none;" />
@@ -42,7 +45,9 @@
 				<label id="fileLabel" class='custom-file-input btn primary_btn btn_center' onclick="document.getElementById('fileInput').click();">Choose a pic</label>
 				<input type='submit' id='submitBtn' class='active_submit primary_btn btn btn_center' style='display:none;'/>
 			</form>
-		</div>
+
+		</main>
+
 		
 		<script src="script.js"></script>	
 		<script src="upload.js"></script>

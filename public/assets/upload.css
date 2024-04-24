@@ -10,8 +10,8 @@ html{
 /* 이게 뭐죠? */
 body {
 	padding: 16px 16px 180px 16px; /* var(--font-size); */
-	height: 100vh; /* 전체 높이를 화면에 맞춤 */
-	width: 100vw;
+	/* height: 100vh;  */
+	width: calc( 100vw - 32px);
 
 	/* display: grid;
 	grid-template-columns: repeat(auto-fill, 1fr);
@@ -69,7 +69,7 @@ p{
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
 	flex-grow: 1;
 
-	margin: 140px 0;
+	margin-bottom: 40px;
 }
 
 .guide {
@@ -91,13 +91,6 @@ p{
   display: inline-block;
 	position: fixed;
 	bottom: 40px;
-
-
-	color: rgb(81, 0, 255); /* 텍스트 컬러 */
-	text-align: center;
-
-	background-color: transparent; /* 배경색 투명 */
-  border: 2px solid rgb(81, 0, 255);
 }
 
 .spinner {
@@ -166,9 +159,10 @@ p{
 
 	.header {
 		width: 50%;
+		margin: 140px 0;
 	}
 
-	.footer {
+	.guide {
 		width: 50%;
 	}
 }
