@@ -195,7 +195,7 @@
 
 /*  ??? - upload페이지에는 안먹힘  */
 button:hover {
-  background-color: rgb(81, 0, 255);
+  background-color: var(--primary);
 	color: var(--white);
 }
 
@@ -364,7 +364,7 @@ p{
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		padding: 40px 16px;
+		padding: 120px 16px;
 	}
 
 	.btn {
