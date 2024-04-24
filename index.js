@@ -107,8 +107,8 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
         </section>
 
         <div class="btn_group">
-          <a href='/' class='btn primary_btn'>Match Your Sock</a>
-          <a href='/upload' class='btn outlined_btn'>Try again</a>
+          <a href='${sockFound.url}' class='btn btn_result primary_btn'>Match Your Sock</a>
+          <a href='/upload' class='btn btn_result outlined_btn'>Try again</a>
         </div>
 
       </div>
@@ -133,7 +133,12 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
       </script>
     `)
   } else {
-    res.write(`<p>No sock found</p>`);
+    res.write(`
+      <main>
+        <h1>No sock found</h1>
+        <a href='/upload' class='btn btn_center outlined_btn'>Try again</a>
+      </main>
+    `);
   }
 
   // Delete file 
