@@ -106,6 +106,7 @@ p{
 	align-items: center;
 
 	padding: 16px;
+	height: 358px;
 
 }
 .sock_profile{
@@ -155,6 +156,9 @@ p{
 
 @media (min-width: 768px) {
 
+	h1{
+		font-size: 72px;
+	}
 	#gradient {
 		display: none;
 	}
