@@ -179,7 +179,7 @@ canvas #canvasElement{
 	white-space: nowrap;
 
 	padding: 12px 20px;
-	width: fit-content;
+	width: 300px !important;
 	height: fit-content;
 	/* 정확히 중앙에 오도록 조정 */
 
