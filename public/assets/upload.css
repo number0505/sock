@@ -10,14 +10,16 @@ html{
 /* 이게 뭐죠? */
 body {
 	padding: 16px 16px 180px 16px; /* var(--font-size); */
+	background:#E9DFCF;/* var(--bg-color); */
+	overflow-x: hidden; /* 가로 스크롤 숨김 */
+	
 	/* height: 100vh;  */
-	width: calc( 100vw - 32px);
+	/* width: calc( 100vw - 32px); */
 
 	/* display: grid;
 	grid-template-columns: repeat(auto-fill, 1fr);
 	row-gap: calc(3 * var(--font-size));???? */
-	background:#E9DFCF;/* var(--bg-color); */
-	overflow-x: hidden; /* 가로 스크롤 숨김 */
+
 	/* justify-items: center; */ 
 
 	/* display: flex; /* Flexbox 설정 */
