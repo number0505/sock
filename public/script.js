@@ -43,7 +43,7 @@ window.addEventListener('scroll', () => {
 	// max(1... 은 축소했을 때 최대1 보다 작아지지 않도록 / 처음 350에서 100까지 축소
 	const scaleDown = Math.max(1, 350 - 349 * percentage);	
 	// min(1... 은 확대했을 때 최소 1 보다 작아지지 않도록 / 처음 50에서 100까지 확대??
-	const scaleUp = Math.min(2.8, 1.2 + 1.5 * percentage);
+	const scaleUp = Math.min(2.8, 1.3 + 1.5 * percentage);
 
 	if (document.getElementById('page1' + screenSizeModifer)) {
 		document.getElementById('page1' + screenSizeModifer).style.transform = `scale(${scaleDown})`;
