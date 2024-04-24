@@ -106,12 +106,14 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
           <p class="description whitebox">${sockFound.description}</p>
         </section>
 
-        <div class="btn">
-        <a href='/upload'>Try again</a>
-        </div>
-        <div class="btn">
-        <a href='/'>Match Your Sock</a>
-        
+        <section>
+          <div class="btn">
+          <a href='/upload'>Try again</a>
+          </div>
+          <div class="btn">
+          <a href='/'>Match Your Sock</a>
+        </section>
+
       </div>
       </main>
       
