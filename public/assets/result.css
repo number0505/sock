@@ -148,13 +148,21 @@ p{
 }
 
 
+.btn_group{
+	margin-bottom: 48px;
+
+	display: flex;
+	flex-direction: column;	
+	gap: 16px;
+}
+
 
 #gradient {
 	position: fixed;
 	bottom: 0;
 	left: 0;
 	width: 100vw;
-	height: 10vh;
+	height: 20vh;
 	display: block;
 	background: white;
 	background: linear-gradient(to top, white, rgba(255, 255, 255, 0));
