@@ -107,6 +107,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
         </section>
 
         <div class="btn_group">
+          <a href='${sockFound.url}' class='btn btn_result primary_btn'>Match Your Sock</a>
           <a href='/upload' class='btn btn_result outlined_btn'>Try again</a>
         </div>
 
@@ -136,7 +137,6 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
       <main>
         <h1>No sock found</h1>
         <a href='/upload' class='btn btn_not_found outlined_btn'>Try again</a>
-        <a href='${sockFound.url}' class='btn btn_result primary_btn'>Match Your Sock</a>
       </main>
     `);
   }
