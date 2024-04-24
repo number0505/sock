@@ -136,7 +136,7 @@ app.post('/result', upload.single('image'), async function(req, res, next) {
     res.write(`
       <main>
         <h1>No sock found</h1>
-        <a href='/upload' class='btn btn_center outlined_btn'>Try again</a>
+        <a href='/upload' class='btn btn_not_found outlined_btn'>Try again</a>
       </main>
     `);
   }

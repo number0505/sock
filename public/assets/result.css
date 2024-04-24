@@ -148,7 +148,7 @@ p{
 	display: inline-grid;
 
 }
-.{
+.btn_result{
 	position: static;
 }
 
@@ -161,6 +161,12 @@ p{
 	gap: 16px;
 }
 
+.btn_not_found{
+	position: fixed;
+	left: 50%; 
+	transform: translateX(-50%); 
+	top: calc(100vh - (52.5px + 40px));
+}
 
 #gradient {
 	position: fixed;
@@ -188,6 +194,7 @@ p{
 		justify-content: center;
 		align-items: flex-start;
 		gap: 48px;
+		min-height: 100vh;
 	}
 
 	.btn_group{

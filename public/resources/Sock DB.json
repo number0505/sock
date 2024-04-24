@@ -1,46 +1,38 @@
 [
     {
         "name": "white sock",
-        "file": "cffda26a2501497295ae3d36334aeec8.jpeg",
-        "description": "1 Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match. Let the matching magic begin!",
+        "file": "her_socks.jpeg",
+        "description": "I'm as smooth as vanilla. I fit in everywhere.",
         "r": "240",
         "g": "230",
-        "b": "209",
+        "b": "208",
         "tag1": "stitch M",
         "tag2": "Wool",
-        "tag3": "Sock"
+        "tag3": "Sock",
+        "url": "https://www.localnomadshop.com/products/her-socks-porcelain"
     },
     {
-        "name": "white dot sock",
-        "file": "cb5815ec3d98bf2b83497c3043ee3363.jpeg",
-        "description": "2 Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match. Let the matching magic begin!",
-        "r": "210",
-        "g": "2",
-        "b": "21",
-        "tag1": "a",
-        "tag2": "b",
-        "tag3": "c"
-    },
-    {
-        "name": null,
-        "file": null,
-        "description": null,
-        "r": null,
-        "g": null,
-        "b": null,
-        "tag1": null,
-        "tag2": null,
-        "tag3": null
-    },
-    {
-        "name": "tttttt",
-        "file": "51P4RyAg+TL._AC_SY879_.jpeg",
-        "description": "3 Simply snap a pic of your solo sock, and let us do the rest! We'll analyze your sock's unique personality and traits, and find their perfect match. Let the matching magic begin!",
-        "r": "251",
-        "g": "80",
-        "b": "8",
+        "name": "forest sock",
+        "file": "cozy_cabin.jpeg",
+        "description": "I love nature! Let's explore the unknown world together!",
+        "r": "185",
+        "g": "190",
+        "b": "157",
         "tag1": "Sock",
-        "tag2": "Victory Chimp",
-        "tag3": "Angry Pablo"
+        "tag2": "Men's Sock",
+        "tag3": "The Sock Shack",
+        "url": "https://www.sherpapullovers.com/products/cozy-cabin-socks-by-kiel-james-patrick"
+    },
+    {
+        "name": "green wool sock",
+        "file": "sock_wool.jpeg",
+        "description": "I am soft and warm. I want to spend the cold winter warmly together.",
+        "r": "31",
+        "g": "48",
+        "b": "51",
+        "tag1": "Sock",
+        "tag2": "Knitting",
+        "tag3": "Wool",
+        "url": "https://www.etsy.com/listing/1345976431/sweater-weather-socks-pattern-knitting"
     }
 ]
