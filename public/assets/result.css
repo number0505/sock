@@ -159,8 +159,8 @@ p{
 		display: none;
 	}
 
-	section{
-	
+	main{
+
 		display: flex;
 		flex-direction: row;
 		justify-content: center;
