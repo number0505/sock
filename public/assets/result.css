@@ -21,8 +21,15 @@ a{
 	left: var(--font-size);
 }
 main{
-	width: var(--100vw-padding);
-	padding: 16px 16px;
+	/* width: var(--100vw-padding); 이거 없는디
+	padding: 16px 16px; */
+
+	display: flex;
+	flex-direction: column;
+
+	justify-content: center;
+	align-items: center;
+	
 }
 
 h1{
@@ -126,4 +133,12 @@ p{
 	height: 10vh;
 	display: block;
 	background: white;
+}
+
+@media (min-width: 768px) {
+
+	#gradient {
+		display: none;
+	}
+
 }

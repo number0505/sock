@@ -211,26 +211,6 @@ button:hover {
 /* 확인해서 지울거지워야함 */
 
 
-.active_submit {
-	position: fixed;
-	padding: 16px 24px;
-	font-size: 20px;
-
-	bottom: 40px;
-	left: 50%;
-	transform: translateX(-50%);
-
-	color: rgb(81, 0, 255); /* 텍스트 컬러 */
-	background-color: transparent; /* 배경색 투명 */
-  border: 2px solid rgb(81, 0, 255);
-	border-radius: 22222px;
-	
-	cursor: pointer;
-	transition: all 0.3s;
-	z-index: 10;
-}
-
-
 /* aside { margin-bottom: calc(4 * var(--spacing)); } */
 
 
@@ -370,6 +350,7 @@ p{
 		position: static;
 		transform: none;
 	}
+
 
 
 	element.style {

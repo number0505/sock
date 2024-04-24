@@ -43,6 +43,8 @@ h3{
 p{
 	padding: 0 0 40px 0 ;
 }
+
+
 #guide_img{
 	margin-bottom: 28px;
 }
@@ -75,8 +77,6 @@ p{
 	flex-shrink: 0; /* 이 요소는 축소되지 않음 */
 	align-self: flex-end;
 	flex-grow: 1;
-
-
 }
 
 
@@ -98,8 +98,6 @@ p{
 
 	background-color: transparent; /* 배경색 투명 */
   border: 2px solid rgb(81, 0, 255);
-	
-
 }
 
 .spinner {
@@ -124,6 +122,26 @@ p{
 
 #myForm {
 	position: relative;
+}
+
+
+.active_submit {
+	position: fixed;
+	padding: 16px 24px;
+	font-size: 20px;
+
+	bottom: 40px;
+	left: 50%;
+	transform: translateX(-50%);
+
+	color: rgb(81, 0, 255); /* 텍스트 컬러 */
+	background-color: transparent; /* 배경색 투명 */
+  border: 2px solid rgb(81, 0, 255);
+	border-radius: 22222px;
+	
+	cursor: pointer;
+	transition: all 0.3s;
+	z-index: 10;
 }
 
 #loadingSpinner {
